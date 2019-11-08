@@ -27,6 +27,9 @@ nav li a:hover:not(.active) {
 	border: 1px solid black;
 	border-radius: 25px;
 }
+ h1 {
+    text-align: center;
+}
 
 /*#home - index.html*/
 #home body {
@@ -72,8 +75,13 @@ nav li a:hover:not(.active) {
 
 /*#galaxies - rockets.html*/
 #galaxies body {
-	background-color: gray;
+	background-color: black;
 	font-family: "Verdana";
+}
+#galaxies h2 {
+    padding: 50px;
+    font-size: 33px;
+    text-align: center;
 }
 
 
