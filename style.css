@@ -34,8 +34,8 @@ nav li a:hover:not(.active) {
 }
 
 /*#home - index.html*/
-#home body {
-	background-color: gray;
+body#home {
+	background-color: black;
 	font-family: "Verdana";
 }
 #home .wrapper {
@@ -69,8 +69,8 @@ nav li a:hover:not(.active) {
 }
 
 /*#rockets - rockets.html*/
-#rockets body {
-	background-color: gray;
+body#rockets {
+	background-color: black;
 	font-family: "Verdana";
 }
 
@@ -89,6 +89,7 @@ h2#galaxies {
 body#galaxies {
   background-image: url("http://www.nasa.gov/sites/default/files/thumbnails/image/p1639ay-goodss-160930.jpg");
 }
+
 
 /*#blackhole - rockets.html*/
 #blackhole body {
