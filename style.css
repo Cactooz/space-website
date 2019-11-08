@@ -92,7 +92,14 @@ body#galaxies {
 
 
 /*#blackhole - rockets.html*/
-#blackhole body {
-	background-color: gray;
-	font-family: "Verdana";
+body#blackhole {
+	 background-image: url("https://i.guim.co.uk/img/media/8e09d8dcc717fca217b30c074bf8ef4747ea4b68/73_0_4854_2913/master/4854.jpg?width=1900&quality=85&auto=format&fit=max&s=c9e7ed42261722ae93c378fcf7254d39");
+	 background-position: center top;
+	 background-repeat: no-repeat;
+	 background-size: auto, cover;
+	 font-family: "verdana";
+	
+#blackhole h2{
+	text-align: center;
+	font-size: 33px;
 }
