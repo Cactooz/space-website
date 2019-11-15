@@ -73,7 +73,35 @@ body#rockets {
 	background-color: black;
 	font-family: "Verdana";
 }
-
+#rockets .wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	"header header header"
+	"nav nav nav"
+	". . ."
+	"main main aside";
+	grid-gap: 15px 3rem;
+	grid-template-rows: auto auto 50px auto;
+}
+#rockets nav {
+	display: grid;
+	grid-area: nav;
+	grid-row-start: nav;
+	grid-row-end: nav;
+}
+#rockets main {
+	grid-area: main;
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+	grid-gap: 30px;
+}
+#rockets aside {
+	grid-area: aside;
+}
+#rockets header {
+	grid-area: header;
+}
 
 /*#galaxies - rockets.html*/
 body#galaxies  {
@@ -90,16 +118,16 @@ body#galaxies {
   background-image: url("http://www.nasa.gov/sites/default/files/thumbnails/image/p1639ay-goodss-160930.jpg");
 }
 
-
 /*#blackhole - rockets.html*/
-body#blackhole {
+body #blackhole {
 	 background-image: url("https://i.guim.co.uk/img/media/8e09d8dcc717fca217b30c074bf8ef4747ea4b68/73_0_4854_2913/master/4854.jpg?width=1900&quality=85&auto=format&fit=max&s=c9e7ed42261722ae93c378fcf7254d39");
 	 background-position: center top;
 	 background-repeat: no-repeat;
 	 background-size: auto, cover;
 	 font-family: "verdana";
+}
 	
-#blackhole h2{
+h2 #blackhole{
 	text-align: center;
 	font-size: 33px;
 }
