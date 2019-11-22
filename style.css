@@ -2,21 +2,28 @@ body {
 	background-color: black;
 	font-family: "Verdana";
 	background-image: url("https://ak6.picdn.net/shutterstock/videos/1819046/thumb/1.jpg");
+    color: white;
+	margin:0px;
 }
-nav ul {
+header {
+	grid-area: header;
+	background-color: black;
+}
+h1 {
+    text-align: center;
+}
+header nav {
+	display: grid;
+	grid-area: nav;
+	grid-row-start: nav;
+	grid-row-end: nav;
+}
+header nav ul {
 	padding: 0px;
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 30px;
-}
-nav a {
-	text-align: center;
-	font-weight: bold;
-	text-decoration: none;
-	color: white;
-	font-size: 1.5em;
-	padding: 5px;
 }
 nav li{
 	display: grid;
@@ -33,22 +40,16 @@ nav li a:hover:not(.active) {
 	border: 1px solid white;
 	border-radius: 25px;
 }
- h1 {
-    text-align: center;
-    color: white;
-}
-nav {
-	display: grid;
-	grid-area: nav;
-	grid-row-start: nav;
-	grid-row-end: nav;
-}
-header {
-	grid-area: header;
+nav a {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+	padding: 5px;
 }
 
 /*#home - index.html*/
-
 #home .wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -76,17 +77,24 @@ header {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:
 	"header header header"
-	"nav nav nav"
+	"nav2 nav2 nav2"
 	". . ."
 	"main main aside";
 	grid-gap: 15px 3rem;
-	grid-template-rows: auto auto 50px auto;
+	grid-template-rows: auto auto 50px 50px;
 }
-#rockets nav {
+#rockets .localNav {
 	display: grid;
-	grid-area: nav;
-	grid-row-start: nav;
-	grid-row-end: nav;
+	grid-area: nav2;
+	grid-row-start: nav2;
+	grid-row-end: nav2;
+}
+#rockets .localNav ul {
+	padding: 0px;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
 }
 #rockets main {
 	grid-area: main;
@@ -102,37 +110,7 @@ header {
 }
 
 /*#galaxies - galaxies.html*/
-#galaxies .wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas:
-	"header header header"
-	"nav nav nav"
-	". . ."
-	"main main aside";
-	grid-gap: 15px 3rem;
-	grid-template-rows: auto auto 50px auto;
-}
-#galaxies h2 {
-    padding: 50px;
-    font-size: 33px;
-    text-align: center;
-    color: white;
-}
+
 
 /*#blackhole - blackhole.html*/
-#blackhole .wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas:
-	"header header header"
-	"nav nav nav"
-	". . ."
-	"main main aside";
-	grid-gap: 15px 3rem;
-	grid-template-rows: auto auto 50px auto;
-}
-#blackhole h2 {
-	text-align: center;
-	font-size: 33px;
-}
+
