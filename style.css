@@ -110,6 +110,54 @@ nav a {
 }
 
 /*#galaxies - galaxies.html*/
+#galaxies .wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	"header header header"
+	"nav nav nav"
+	". . ."
+	"main main aside";
+	"left middle right"; /* Fixa detta till nästa gång */
+	grid-gap: 15px 3rem;
+	grid-template-rows: auto auto 50px auto;
+}
+#galaxies .lowernav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-area: nav;
+	grid-row-start: nav;
+	grid-row-end: nav;
+}
+#galaxies main {
+	grid-area: main;
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+	grid-gap: 30px;
+	margin-left: 30px;
+}
+#galaxies aside {
+	grid-area: aside;
+	margin-right: 30px;
+	padding: 10px;
+}
+#galaxies img {
+  width: 100%;
+  height: auto;
+  border: 2px solid white;
+}
+#galaxies p {
+  color: white;
+}
+#galaxies h2 {
+  color: white;
+}
+#galaxies .vintergatan{
+	background-color: gray;
+    opacity: 0.5;
+	padding: 10px;
+	border: 2px solid white;
+}
 
 
 /*#blackhole - blackhole.html*/
