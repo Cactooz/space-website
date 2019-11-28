@@ -58,7 +58,7 @@ nav a {
 	". . ."
 	"main main aside";
 	grid-gap: 15px 3rem;
-	grid-template-rows: auto 200px 200px;
+	grid-template-rows: auto 60vh 200px;
 }
 #home main {
 	grid-area: main;
@@ -76,33 +76,26 @@ nav a {
 }
 
 #home .sun {
-    top: 50%;
-    left: 50%;
-	
-    height: 200px;
-    width: 200px;
-    margin-top: -100px; 
-    margin-left: -100px;
+    height: 20vh;
+    width: 20vh;
+    margin-top: -10vh; 
+    margin-left: -10vh;
 }
   
 #home .mercury {
-    top: 0%;
     left: 50%;
     
-    height: 14.7px;
-    width: 14.7px;
-    margin-top: -7.4px;
-    margin-left: -7.4px;
+    height: 1.47vh;
+    width: 1.47vh;
+    margin-top: -0.74vh;
+    margin-left: -0.74vh;
 }
 
 #home .mercury-orbit {
-    top: 50%;
-    left: 50%;
-
-    width: 257px;
-    height: 257px;
-    margin-top: -128.5px;
-    margin-left: -128.5px;
+    width: 25.7vh;
+    height: 25.7vh;
+    margin-top: -12.85vh;
+    margin-left: -12.85vh;
 	border: 2px solid white;
 	border-radius: 50%;
 
@@ -112,23 +105,19 @@ nav a {
   }
 
 #home .venus {
-    top: 0%;
     left: 50%;
     
-    height: 36px;
-    width: 36px;
-    margin-top: -18px;
-    margin-left: -18px;
+    height: 3.6vh;
+    width: 3.6vh;
+    margin-top: -1.8vh;
+    margin-left: -1.8vh;
 }
 
 #home .venus-orbit {
-    top: 50%;
-    left: 50%;
-
-    width: 308px;
-    height: 308px;
-    margin-left: -154px;
-    margin-top: -154px;
+    width: 30.8vh;
+    height: 30.8vh;
+    margin-left: -15.4vh;
+    margin-top: -15.4vh;
 	border-radius: 50%;
 	border: 2px solid white;
 	
@@ -137,23 +126,19 @@ nav a {
     animation: spin-right 11.3s linear infinite;
 }
 #home .earth {
-    top: 0%;
     left: 50%;
     
-    height: 39px;
-    width: 39px;
-    margin-top: -19.5px;
-    margin-left: -19.5px;
+    height: 3.9vh;
+    width: 3.9vh;
+    margin-top: -1.95vh;
+    margin-left: -1.95vh;
 }
 
 #home .earth-orbit {
-    top: 50%;
-    left: 50%;
-
-    width: 350px;
-    height: 350px;
-    margin-left: -175px;
-    margin-top: -175px;
+    width: 35vh;
+    height: 35vh;
+    margin-left: -17.5vh;
+    margin-top: -17.5vh;
 	border: 2px solid white;
 	border-radius: 50%;
    
@@ -164,20 +149,19 @@ nav a {
 }
 
 #home .moon {
-    height: 10.5px;
-    width: 10.5px;
-    margin-top: -5.3px;
-    margin-left: -5.3px;
+    height: 1.05vh;
+    width: 1.05vh;
+    margin-top: -0.53vh;
+    margin-left: -0.53vh;
 }
 
 #home .moon-orbit {
-    top: 0%;
     left: 50%;
 
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
+    width: 4vh;
+    height: 4vh;
+    margin-top: -2vh;
+    margin-left: -2vh;
 
     -webkit-animation: spin-right 1.2s linear infinite;
     -moz-animation: spin-right 1.2s linear infinite;
@@ -185,23 +169,19 @@ nav a {
   }
   
 #home .mars {
-    top: 0%;
     left: 50%;
 
-    height: 20.4px;
-    width: 20.4px;
-    margin-top: -10.2px;
-    margin-left: -10.2px;
+    height: 2.04vh;
+    width: 2.04vh;
+    margin-top: -1.02vh;
+    margin-left: -1.02vh;
 }
 
 #home .mars-orbit {
-    top: 50%;
-    left: 50%;
-
-    width: 428px;
-    height: 428px;
-    margin-left: -214px;
-    margin-top: -214px;
+    width: 42.8vh;
+    height: 42.8vh;
+    margin-left: -21.4vh;
+    margin-top: -21.4vh;
 	border: 2px solid white;
 	border-radius: 50%;
    
@@ -211,23 +191,19 @@ nav a {
 }
 
 #home .jupiter {
-    top: 0%;
     left: 50%;
     
-    height: 70px;
-    width: 70px;
-    margin-top: -35px;
-    margin-left: -35px;
+    height: 7vh;
+    width: 7vh;
+    margin-top: -3.5vh;
+    margin-left: -3.5vh;
 }
 
 #home .jupiter-orbit {
-    top: 50%;
-    left: 50%;
-
-    width: 689.5px;
-    height: 689.5px;
-    margin-left: -344.8px;
-    margin-top: -344.8px;
+    width: 68.95vh;
+    height: 68.95vh;
+    margin-left: -34.48vh;
+    margin-top: -34.48vh;
 	border: 2px solid white;
 	border-radius: 50%;
    
@@ -237,23 +213,19 @@ nav a {
 }
 
 #home .saturn {
-    top: 0%;
     left: 50%;
     
-    height: 125px;
-    width: 125px;
-    margin-top: -62.5px;
-    margin-left: -62.5px;
+    height: 12.5vh;
+    width: 12.5vh;
+    margin-top: -6.25vh;
+    margin-left: -6.25vh;
 }
 
 #home .saturn-orbit {
-    top: 50%;
-    left: 50%;
-
-    width: 815px;
-    height: 815px;
-    margin-left: -407.5px;
-    margin-top: -407.5px;
+    width: 81.5vh;
+    height: 81.5vh;
+    margin-left: -40.75vh;
+    margin-top: -40.75vh;
 	border: 2px solid white;
 	border-radius: 50%;
    
@@ -263,23 +235,19 @@ nav a {
 }
 
 #home .uranus {
-    top: 0%;
     left: 50%;
   
-    height: 25px;
-    width: 25px;
-    margin-top: -12.3px;
-    margin-left: -12.3px;
+    height: 2.5vh;
+    width: 2.5vh;
+    margin-top: -1.23vh;
+    margin-left: -1.23vh;
 }
 
 #home .uranus-orbit {
-    top: 50%;
-    left: 50%;
-    
-    width: 1026.7px;
-    height: 1026.7px;
-    margin-left: -513.3px;
-    margin-top: -513.3px;
+    width: 102.67vh;
+    height: 102.67vh;
+    margin-left: -51.33vh;
+    margin-top: -51.33vh;
 	border: 2px solid white;
 	border-radius: 50%;
    
@@ -289,23 +257,19 @@ nav a {
 }
 
 #home .neptune {
-    top: 0%;
     left: 50%;
     
-    height: 25px;
-    width: 25px;
-    margin-top: -12.3px;
-    margin-left: -12.3px;
+    height: 2.5vh;
+    width: 2.5vh;
+    margin-top: -1.23vh;
+    margin-left: -1.23vh;
 }
 
 #home .neptune-orbit {
-    top: 50%;
-    left: 50%;
-
-    width: 1175px;
-    height: 1175px;
-    margin-left: -587.5px;
-    margin-top: -587.5px;
+    width: 117.5vh;
+    height: 117.5vh;
+    margin-left: -58.75vh;
+    margin-top: -58.75vh;
 	border: 2px solid white;
 	border-radius: 50%;
    
