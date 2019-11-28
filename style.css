@@ -148,17 +148,20 @@ nav a {
 }
 #galaxies p {
   color: white;
+  text-align: center;
+  font-family: Courier;
 }
 #galaxies h2 {
   color: white;
+  text-align: center;
+  font-family: Courier;
 }
 #galaxies .vintergatan{
-	background-color: gray;
-    opacity: 0.5;
-	padding: 10px;
+	background-color: rgba(100,100,100,0.5);
+	padding: 20px;
 	border: 2px solid white;
+    border-radius: 25px;
 }
-
 
 /*#blackhole - blackhole.html*/
 #blackhole .wrapper {
