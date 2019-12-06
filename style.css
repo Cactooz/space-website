@@ -110,16 +110,16 @@ nav a {
 }
 
 /*#galaxies - galaxies.html*/
-#galaxies main {
+#galaxies .main1 {
 	grid-area: main;
 	grid-template-columns: 1fr 1fr;
 	display: grid;
 	grid-gap: 30px;
-	margin-left: 30px;
+	margin-left: 100px;
 }
-#galaxies aside {
+#galaxies .aside1 {
 	grid-area: aside;
-	margin-right: 30px;
+	margin-right: 100px;
 	padding: 10px;
 }
 #galaxies img {
@@ -189,4 +189,5 @@ border-color: white;
 p{
 	padding:10px;
 }
+
 
