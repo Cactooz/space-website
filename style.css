@@ -48,6 +48,30 @@ nav a {
 	font-size: 1.5em;
 	padding: 5px;
 }
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	"header header header"
+	"nav2 nav2 nav2"
+	". . ."
+	"main main aside";
+	grid-gap: 15px 3rem;
+	grid-template-rows: auto auto 50px auto;
+}
+.lowernav ul{
+	padding: 0px;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+.lowernav {
+	display: grid;
+	grid-area: nav2;
+	grid-row-start: nav2;
+	grid-row-end: nav2;
+}
 
 /*#home - index.html*/
 #home .wrapper {
@@ -72,30 +96,6 @@ nav a {
 }
 
 /*#rockets - rockets.html*/
-#rockets .wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas:
-	"header header header"
-	"nav2 nav2 nav2"
-	". . ."
-	"main main aside";
-	grid-gap: 15px 3rem;
-	grid-template-rows: auto auto 50px 50px;
-}
-#rockets .localNav {
-	display: grid;
-	grid-area: nav2;
-	grid-row-start: nav2;
-	grid-row-end: nav2;
-}
-#rockets .localNav ul {
-	padding: 0px;
-	list-style-type: none;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 30px;
-}
 #rockets main {
 	grid-area: main;
 	grid-template-columns: 1fr 1fr;
@@ -110,25 +110,6 @@ nav a {
 }
 
 /*#galaxies - galaxies.html*/
-#galaxies .wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas:
-	"header header header"
-	"nav nav nav"
-	". . ."
-	"main main aside";
-	"left middle right"; /* Fixa detta till nästa gång */
-	grid-gap: 15px 3rem;
-	grid-template-rows: auto auto 50px auto;
-}
-#galaxies .lowernav {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-area: nav;
-	grid-row-start: nav;
-	grid-row-end: nav;
-}
 #galaxies main {
 	grid-area: main;
 	grid-template-columns: 1fr 1fr;
@@ -158,23 +139,12 @@ nav a {
 }
 #galaxies .vintergatan{
 	background-color: rgba(100,100,100,0.5);
-	padding: 20px;
+	padding: 20px; 
 	border: 2px solid white;
     border-radius: 25px;
 }
 
 /*#blackhole - blackhole.html*/
-#blackhole .wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas:
-	"header header header"
-	"nav nav nav"
-	". . ."
-	"main main aside";
-	grid-gap: 15px 3rem;
-	grid-template-rows: auto auto 50px auto;
-}
 #blackhole h2 {
 	text-align: center;
 	font-size: 33px;
@@ -219,5 +189,4 @@ border-color: white;
 p{
 	padding:10px;
 }
-
 
