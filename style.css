@@ -74,247 +74,279 @@ nav a {
 }
 
 /*#home - index.html*/
-#home .wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas:
-	"header header header"
-	". . ."
-	"main main aside";
-	grid-gap: 15px 3rem;
-	grid-template-rows: auto 60vh 200px;
-}
-#home main {
-	grid-area: main;
-	grid-template-columns: 1fr 1fr;
-	display: grid;
-	grid-gap: 30px;
-}
-#home aside {
-	grid-area: aside;
-}
+	#home .wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+		"header header header"
+		". . aside"
+		". main aside"
+		"infoText infoText aside";
+		grid-gap: 15px 3rem;
+		grid-template-rows: auto 60vh 60vh auto;
+		grid-template-columns: 30vw 60vh auto;
+	}
+	#home main {
+		grid-area: main;
+	}
+	#home aside {
+		grid-area: aside;
+		display: grid;
+		grid-gap: 30px;
+	}
 
-/*Solar system planets*/
-#home .absolute {
-    position: absolute;
-}
-
-#home .sun {
-    height: 20vh;
-    width: 20vh;
-    margin-top: -10vh; 
-    margin-left: -10vh;
-}
-  
-#home .mercury {
-    left: 50%;
-    
-    height: 1.47vh;
-    width: 1.47vh;
-    margin-top: -0.74vh;
-    margin-left: -0.74vh;
-}
-
-#home .mercury-orbit {
-    width: 25.7vh;
-    height: 25.7vh;
-    margin-top: -12.85vh;
-    margin-left: -12.85vh;
-	border: 2px solid white;
-	border-radius: 50%;
-
-    -webkit-animation: spin-right 4.4s linear infinite;
-    -moz-animation: spin-right 4.4s linear infinite;
-    animation: spin-right 4.4s linear infinite;
-  }
-
-#home .venus {
-    left: 50%;
-    
-    height: 3.6vh;
-    width: 3.6vh;
-    margin-top: -1.8vh;
-    margin-left: -1.8vh;
-}
-
-#home .venus-orbit {
-    width: 30.8vh;
-    height: 30.8vh;
-    margin-left: -15.4vh;
-    margin-top: -15.4vh;
-	border-radius: 50%;
-	border: 2px solid white;
+	/*Planet buttons*/
+	#home .sunButton, .mercuryButton, .venusButton, .earthButton, .marsButton, .jupiterButton, .saturnButton, .uranusButton, .neptuneButton {
+		height: 20vh;
+		width: 20vh;
+		grid-area: image;
+	}
 	
-    -webkit-animation: spin-right 11.3s linear infinite;
-    -moz-animation: spin-right 11.3s linear infinite;
-    animation: spin-right 11.3s linear infinite;
-}
-#home .earth {
-    left: 50%;
-    
-    height: 3.9vh;
-    width: 3.9vh;
-    margin-top: -1.95vh;
-    margin-left: -1.95vh;
-}
+	#home aside a {
+		display: grid;
+		grid-gap: 30px;
+		grid-template-areas: "image h2";
+		text-decoration: none;
+		color: white;
+	}
+	
+	#home h2 {
+		grid-area: h2;
+		padding: 16px 0;
+		font-size: 50px;
+	}
+	
+	/*Planet facts text*/
+	#home .infoText {
+		grid-area: infoText;
+		background-color: rgba(100,100,100,0.5);
+		padding: 20px; 
+		border: 2px solid white;
+		border-radius: 25px;
+		margin: 10px;
+	}
+	
+	/*Solar system planets*/
+	#home .absolute {
+		position: absolute;
+	}
 
-#home .earth-orbit {
-    width: 35vh;
-    height: 35vh;
-    margin-left: -17.5vh;
-    margin-top: -17.5vh;
-	border: 2px solid white;
-	border-radius: 50%;
-   
-    
-    -webkit-animation: spin-right 18.3s linear infinite;
-    -moz-animation: spin-right 18.3s linear infinite;
-    animation: spin-right 18.3s linear infinite;
-}
+	#home .sun {
+		height: 20vh;
+		width: 20vh;
+		margin-top: -10vh; 
+		margin-left: -10vh;
+	}
+	  
+	#home .mercury {
+		left: 50%;
+		
+		height: 1.47vh;
+		width: 1.47vh;
+		margin-top: -0.74vh;
+		margin-left: -0.74vh;
+	}
 
-#home .moon {
-    height: 1.05vh;
-    width: 1.05vh;
-    margin-top: -0.53vh;
-    margin-left: -0.53vh;
-}
+	#home .mercuryOrbit {
+		width: 25.7vh;
+		height: 25.7vh;
+		margin-top: -12.85vh;
+		margin-left: -12.85vh;
+		border: 2px solid white;
+		border-radius: 50%;
 
-#home .moon-orbit {
-    left: 50%;
+		-webkit-animation: spin-right 4.4s linear infinite;
+		-moz-animation: spin-right 4.4s linear infinite;
+		animation: spin-right 4.4s linear infinite;
+	  }
 
-    width: 4vh;
-    height: 4vh;
-    margin-top: -2vh;
-    margin-left: -2vh;
+	#home .venus {
+		left: 50%;
+		
+		height: 3.6vh;
+		width: 3.6vh;
+		margin-top: -1.8vh;
+		margin-left: -1.8vh;
+	}
 
-    -webkit-animation: spin-right 1.2s linear infinite;
-    -moz-animation: spin-right 1.2s linear infinite;
-    animation: spin-right 1.2s linear infinite;
-  }
-  
-#home .mars {
-    left: 50%;
+	#home .venusOrbit {
+		width: 30.8vh;
+		height: 30.8vh;
+		margin-left: -15.4vh;
+		margin-top: -15.4vh;
+		border-radius: 50%;
+		border: 2px solid white;
+		
+		-webkit-animation: spin-right 11.3s linear infinite;
+		-moz-animation: spin-right 11.3s linear infinite;
+		animation: spin-right 11.3s linear infinite;
+	}
+	#home .earth {
+		left: 50%;
+		
+		height: 3.9vh;
+		width: 3.9vh;
+		margin-top: -1.95vh;
+		margin-left: -1.95vh;
+	}
 
-    height: 2.04vh;
-    width: 2.04vh;
-    margin-top: -1.02vh;
-    margin-left: -1.02vh;
-}
+	#home .earthOrbit {
+		width: 35vh;
+		height: 35vh;
+		margin-left: -17.5vh;
+		margin-top: -17.5vh;
+		border: 2px solid white;
+		border-radius: 50%;
+	   
+		
+		-webkit-animation: spin-right 18.3s linear infinite;
+		-moz-animation: spin-right 18.3s linear infinite;
+		animation: spin-right 18.3s linear infinite;
+	}
 
-#home .mars-orbit {
-    width: 42.8vh;
-    height: 42.8vh;
-    margin-left: -21.4vh;
-    margin-top: -21.4vh;
-	border: 2px solid white;
-	border-radius: 50%;
-   
-	-webkit-animation: spin-right 34.4s linear infinite;
-    -moz-animation: spin-right 34.4s linear infinite;
-    animation: spin-right 34.4s linear infinite;
-}
+	#home .moon {
+		height: 1.05vh;
+		width: 1.05vh;
+		margin-top: -0.53vh;
+		margin-left: -0.53vh;
+	}
 
-#home .jupiter {
-    left: 50%;
-    
-    height: 7vh;
-    width: 7vh;
-    margin-top: -3.5vh;
-    margin-left: -3.5vh;
-}
+	#home .moonOrbit {
+		left: 50%;
 
-#home .jupiter-orbit {
-    width: 68.95vh;
-    height: 68.95vh;
-    margin-left: -34.48vh;
-    margin-top: -34.48vh;
-	border: 2px solid white;
-	border-radius: 50%;
-   
-    -webkit-animation: spin-right 217.2s linear infinite;
-    -moz-animation: spin-right 217.2s linear infinite;
-    animation: spin-right 217.2s linear infinite;
-}
+		width: 4vh;
+		height: 4vh;
+		margin-top: -2vh;
+		margin-left: -2vh;
 
-#home .saturn {
-    left: 50%;
-    
-    height: 12.5vh;
-    width: 12.5vh;
-    margin-top: -6.25vh;
-    margin-left: -6.25vh;
-}
+		-webkit-animation: spin-right 1.2s linear infinite;
+		-moz-animation: spin-right 1.2s linear infinite;
+		animation: spin-right 1.2s linear infinite;
+	  }
+	  
+	#home .mars {
+		left: 50%;
 
-#home .saturn-orbit {
-    width: 81.5vh;
-    height: 81.5vh;
-    margin-left: -40.75vh;
-    margin-top: -40.75vh;
-	border: 2px solid white;
-	border-radius: 50%;
-   
-    -webkit-animation: spin-right 483.7s linear infinite;
-    -moz-animation: spin-right 483.7s linear infinite;
-    animation: spin-right 483.7s linear infinite;
-}
+		height: 2.04vh;
+		width: 2.04vh;
+		margin-top: -1.02vh;
+		margin-left: -1.02vh;
+	}
 
-#home .uranus {
-    left: 50%;
-  
-    height: 2.5vh;
-    width: 2.5vh;
-    margin-top: -1.23vh;
-    margin-left: -1.23vh;
-}
+	#home .marsOrbit {
+		width: 42.8vh;
+		height: 42.8vh;
+		margin-left: -21.4vh;
+		margin-top: -21.4vh;
+		border: 2px solid white;
+		border-radius: 50%;
+	   
+		-webkit-animation: spin-right 34.4s linear infinite;
+		-moz-animation: spin-right 34.4s linear infinite;
+		animation: spin-right 34.4s linear infinite;
+	}
 
-#home .uranus-orbit {
-    width: 102.67vh;
-    height: 102.67vh;
-    margin-left: -51.33vh;
-    margin-top: -51.33vh;
-	border: 2px solid white;
-	border-radius: 50%;
-   
-    -webkit-animation: spin-right 1533s linear infinite;
-    -moz-animation: spin-right 1533s linear infinite;
-    animation: spin-right 1533s linear infinite;
-}
+	#home .jupiter {
+		left: 50%;
+		
+		height: 7vh;
+		width: 7vh;
+		margin-top: -3.5vh;
+		margin-left: -3.5vh;
+	}
 
-#home .neptune {
-    left: 50%;
-    
-    height: 2.5vh;
-    width: 2.5vh;
-    margin-top: -1.23vh;
-    margin-left: -1.23vh;
-}
+	#home .jupiterOrbit {
+		width: 68.95vh;
+		height: 68.95vh;
+		margin-left: -34.48vh;
+		margin-top: -34.48vh;
+		border: 2px solid white;
+		border-radius: 50%;
+	   
+		-webkit-animation: spin-right 217.2s linear infinite;
+		-moz-animation: spin-right 217.2s linear infinite;
+		animation: spin-right 217.2s linear infinite;
+	}
 
-#home .neptune-orbit {
-    width: 117.5vh;
-    height: 117.5vh;
-    margin-left: -58.75vh;
-    margin-top: -58.75vh;
-	border: 2px solid white;
-	border-radius: 50%;
-   
-    -webkit-animation: spin-right 3012.8s linear infinite;
-    -moz-animation: spin-right 3012.8s linear infinite;
-    animation: spin-right 3012.8s linear infinite;
-}
+	#home .saturn {
+		left: 50%;
+		
+		height: 12.5vh;
+		width: 12.5vh;
+		margin-top: -6.25vh;
+		margin-left: -6.25vh;
+	}
 
-/*Rotating animation*/
+	#home .saturnOrbit {
+		width: 81.5vh;
+		height: 81.5vh;
+		margin-left: -40.75vh;
+		margin-top: -40.75vh;
+		border: 2px solid white;
+		border-radius: 50%;
+	   
+		-webkit-animation: spin-right 483.7s linear infinite;
+		-moz-animation: spin-right 483.7s linear infinite;
+		animation: spin-right 483.7s linear infinite;
+	}
 
-@-webkit-keyframes spin-right {
-  100% {
-      -webkit-transform: rotate(360deg);
-  }
-}
+	#home .uranus {
+		left: 50%;
+	  
+		height: 2.5vh;
+		width: 2.5vh;
+		margin-top: -1.23vh;
+		margin-left: -1.23vh;
+	}
 
-@-moz-keyframes spin-right {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
+	#home .uranusOrbit {
+		width: 102.67vh;
+		height: 102.67vh;
+		margin-left: -51.33vh;
+		margin-top: -51.33vh;
+		border: 2px solid white;
+		border-radius: 50%;
+	   
+		-webkit-animation: spin-right 1533s linear infinite;
+		-moz-animation: spin-right 1533s linear infinite;
+		animation: spin-right 1533s linear infinite;
+	}
+
+	#home .neptune {
+		left: 50%;
+		
+		height: 2.5vh;
+		width: 2.5vh;
+		margin-top: -1.23vh;
+		margin-left: -1.23vh;
+	}
+
+	#home .neptuneOrbit {
+		width: 117.5vh;
+		height: 117.5vh;
+		margin-left: -58.75vh;
+		margin-top: -58.75vh;
+		border: 2px solid white;
+		border-radius: 50%;
+	   
+		-webkit-animation: spin-right 3012.8s linear infinite;
+		-moz-animation: spin-right 3012.8s linear infinite;
+		animation: spin-right 3012.8s linear infinite;
+	}
+
+	/*Rotating animation*/
+
+	@-webkit-keyframes spin-right {
+	  100% {
+		  -webkit-transform: rotate(360deg);
+	  }
+	}
+
+	@-moz-keyframes spin-right {
+		100% {
+			-webkit-transform: rotate(360deg);
+		}
+	}
 
 /*#rockets - rockets.html*/
 #rockets main {
