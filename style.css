@@ -372,6 +372,7 @@ nav a {
 }
 .svartHål{
 	text-align: left;
+
 }
 
 .faktaSvartaHål{
@@ -386,6 +387,8 @@ nav a {
 	border-width:5px;
 	border-color: white;
 	border-radius: 25px;
+	background-color: rgba(100,100,100,0.5);
+	font-family: Courier;
 }
 
 .foto{
