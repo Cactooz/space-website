@@ -331,22 +331,24 @@ nav a {
 }
 
 /*#galaxies - galaxies.html*/
-#galaxies .main1 {
+#galaxies main {
 	grid-area: main;
 	grid-template-columns: 1fr 1fr;
 	display: grid;
 	grid-gap: 30px;
 	margin-left: 100px;
 }
-#galaxies .aside1 {
+#galaxies aside {
 	grid-area: aside;
 	margin-right: 100px;
 	padding: 10px;
 }
 #galaxies img {
-  width: 100%;
+  width: 150%;
   height: auto;
   border: 2px solid white;
+  margin-left: 120px;
+  border-radius: 25px;
 }
 #galaxies p {
   color: white;
@@ -372,7 +374,6 @@ nav a {
 }
 .svartHål{
 	text-align: left;
-
 }
 
 .faktaSvartaHål{
@@ -387,8 +388,6 @@ nav a {
 	border-width:5px;
 	border-color: white;
 	border-radius: 25px;
-	background-color: rgba(100,100,100,0.5);
-	font-family: Courier;
 }
 
 .foto{
