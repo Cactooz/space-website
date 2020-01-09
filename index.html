@@ -68,73 +68,214 @@
 					</section>
 				</section>
 			</main>
-			<section class="infoText">
-				<p>
-					De första 4 planeterna är 3 gånger sin storlek<br>
-					De yttersta 4 är hälften av sin storlek<br>
-					En sekund är distansen planeten förflyttas på 20 jorddagar<br>
-					Solen är 7000 gånger mindre än sin verkliga storlek<br>
-					Jupiter och Saturnus har halva sin normala omloppsbana<br>
-					Uranus har en tredjedel av sin normala omloppsbana<br>
-					Neptunus har en fjärdedel av sin normala omloppsbana
-				</p>
-			</section>
 			<aside>
-				<section class="infoOnClick">
-					<a href=".sunInfo">
-						<img class="sunButton"src="images\sun.png" alt="Bild på Solen">
+				<section>
+					<a href="#sunInfo">
+						<img class="planetButton" src="images\sun.png" alt="Bild på Solen">
 						<h2>Solen</h2>
 					</a>
 				</section>
-				<section class="infoOnClick">
-					<a href=".mercuryInfo">
-						<img class="mercuryButton" src="images\mercury.png" alt="Bild på Merkurius">
+				<section>
+					<a href="#mercuryInfo">
+						<img class="planetButton" src="images\mercury.png" alt="Bild på Merkurius">
 						<h2>Merkurius</h2>
 					</a>
 				</section>
-				<section class="infoOnClick">
-					<a href=".venusInfo">
-						<img class="venusButton" src="images\venus.png" alt="Bild på Venus">
+				<section>
+					<a href="#venusInfo">
+						<img class="planetButton" src="images\venus.png" alt="Bild på Venus">
 						<h2>Venus</h2>
 					</a>
 				</section>
-				<section class="infoOnClick">
-					<a href=".earthInfo">
-						<img class="earthButton" src="images\earth.png" alt="Bild på the Jorden">
+				<section>
+					<a href="#earthInfo">
+						<img class="planetButton" src="images\earth.png" alt="Bild på the Jorden">
 						<h2>Jorden</h2>
 					</a>
 				</section>
-				<section class="infoOnClick">
-					<a href=".marsInfo">
-						<img class="marsButton" src="images\mars.png" alt="Bild på Mars">
+				<section>
+					<a href="#marsInfo">
+						<img class="planetButton" src="images\mars.png" alt="Bild på Mars">
 						<h2>Mars</h2>
 					</a>
 				</section>
-				<section class="infoOnClick">
-					<a href=".jupiterInfo">
-						<img class="jupiterButton" src="images\jupiter.png" alt="Bild på Jupiter">
+				<section>
+					<a href="#jupiterInfo">
+						<img class="planetButton" src="images\jupiter.png" alt="Bild på Jupiter">
 						<h2>Jupiter</h2>
 					</a>
 				</section>
-				<section class="infoOnClick">
-					<a href=".satrunInfo">
-						<img class="saturnButton" src="images\saturn.png" alt="Bild på Saturnus">
+				<section>
+					<a href="#satrunInfo">
+						<img class="planetButton" src="images\saturn.png" alt="Bild på Saturnus">
 						<h2>Saturnus</h2>
 					</a>
 				</section>
-				<section class="infoOnClick">
-					<a href=".uranusInfo">
-						<img class="uranusButton" src="images\uranus.png" alt="Bild på Uranus">
+				<section>
+					<a href="#uranusInfo">
+						<img class="planetButton" src="images\uranus.png" alt="Bild på Uranus">
 						<h2>Uranus</h2>
 					</a>
 				</section>
-				<section class="infoOnClick">
-					<a href=".neptuneInfo">
-						<img class="neptuneButton" src="images\neptune.png" alt="Bild på Neptunus">
+				<section>
+					<a href="#neptuneInfo">
+						<img class="planetButton" src="images\neptune.png" alt="Bild på Neptunus">
 						<h2>Neptunus</h2>
 					</a>
 				</section>
 			</aside>
+			<section class="infoText">
+				<h3>Skalnings Information</h3>
+				<p>
+					Storlek:<br>
+					Solen - 1:7000<br>
+					Merkuris, Venus, Jorden & Mars - 3:1<br>
+					Jupiter, Saturnus, Uranus & Neptunus - 1:2<br>
+					<br>
+					Tid:<br>
+					1 sekund = 20 jorddagar (480 timmar)<br>
+					<br>
+					Omloppsbana:<br>
+					Merkuris, Venus, Jorden & Mars - 1:1<br>
+					Jupiter & Saturnus 1:2<br>
+					Uranus - 1:3<br>
+					Neptunus - 1:4
+				</p>
+			</section>
+			<img class="galaxImage" src="images/vintergatan.jpg" alt="Bild på våran hem galax, Vintergatan">
+			<!--Modals-->
+			<section id="sunInfo" class="overlay">
+				<section class="popup">
+					<h4>Solen</h4>
+					<a class="close" href="#">×</a>
+					<p>
+						Bildades: 4,6 miljarder år sedan<br>
+						Temperatur i kärnan: 15 miljoner °C<br>
+						Massa: 333 000 gånger jordens massa<br>
+						Yta: Solens yta består av 6000 °C het gas som består till största delen av väte (70%)
+					</p>
+				</section>
+			</section>
+			<section id="mercuryInfo" class="overlay">
+				<section class="popup">
+					<h4>Merkurius</h4>
+					<a class="close" href="#">×</a>
+					<p>
+						Upptäckt: Forntid<br>
+						Diameter: 4879km<br>
+						Omloppstid: 88 jorddygn<br>
+						Avstånd från solen: 58 miljoner km<br>
+						Yttemperatur: -180 till 430 °C<br>
+						Yta: stenig, kratrar<br>
+						Antal månar: 0
+					</p>
+				</section>
+			</section>
+			<section id="venusInfo" class="overlay">
+				<section class="popup">
+					<h4>Venus</h4>
+					<a class="close" href="#">×</a>
+					<p>
+						Upptäckt: Forntid<br>
+						Diameter: 12 104km<br>
+						Omloppstid: 224,7 jorddygn<br>
+						Avstånd från solen: 108 miljoner km<br>
+						Yttemperatur: 460 °C<br>
+						Yta: stenig, vulkanisk<br>
+						Antal månar: 0
+					</p>
+				</section>
+			</section>
+			<section id="earthInfo" class="overlay">
+				<section class="popup">
+					<h4>Jorden</h4>
+					<a class="close" href="#">×</a>
+					<p>
+						Bildades: 4,54 miljarder år sedan<br>
+						Diameter: 12 756km<br>
+						Omloppstid: 365,25 dygn<br>
+						Avstånd från solen: 149,6 miljoner km<br>
+						Yttemperatur: -88°C till +58°C<br>
+						Yta: Stenig och täckt av vatten<br>
+						Antal månar: 1
+					</p>
+				</section>
+			</section>
+			<section id="marsInfo" class="overlay">
+				<section class="popup">
+					<h4>Mars</h4>
+					<a class="close" href="#">×</a>
+					<p>
+						Upptäckt: Forntid<br>
+						Diameter: 6792 km<br>
+						Omloppstid: 687 jorddygn<br>
+						Avstånd från solen: 228 miljoner km<br>
+						Yttemperatur: -125 °C till +24°C<br>
+						Yta: Stenig yta med rostiga stenar och röd sand. Vid polerna fruset vatten.<br>
+						Antal månar: 2 (Phobos och Deimos)
+					</p>
+				</section>
+			</section>
+			<section id="jupiterInfo" class="overlay">
+				<section class="popup">
+					<h4>Jupiter</h4>
+					<a class="close" href="#">×</a>
+					<p>
+						Upptäckt: Forntid<br>
+						Diameter: 142 980 km<br>
+						Omloppstid: 11,86 jordår<br>
+						Avstånd från solen: 779 miljoner km<br>
+						Yttemperatur: mellan 70°C och -110°C<br>
+						Yta: Stort klot av gas. Finns troligen inte fast yta på Jupiter.
+						Antal månar: 79 (Europa, Ganymedes, Io, Callisto med flera)
+					</p>
+				</section>
+			</section>
+			<section id="satrunInfo" class="overlay">
+				<section class="popup">
+					<h4>Saturnus</h4>
+					<a class="close" href="#">×</a>
+					<p>
+						Upptäckt: Forntid<br>
+						Diameter: 120 540 km<br>
+						Omloppstid: 29,5 jordår<br>
+						Avstånd från solen: 1433 miljoner km<br>
+						Yttemperatur: -180 °C<br>
+						Yta: består mest av väte<br>
+						Antal månar: cirka 200 (62 bekräftade - Titan, Enceladus, Mimas med flera)
+					</p>
+				</section>
+			</section>
+			<section id="uranusInfo" class="overlay">
+				<section class="popup">
+					<h4>Uranus</h4>
+					<a class="close" href="#">×</a>
+					<p>
+						Upptäckt 1781 av astronomen William Herchel<br>
+						Diameter: 51 120 km<br>
+						Omloppstid: 84 jordår<br>
+						Avstånd från solen: 2748 miljoner år<br>
+						Yttemperatur: -215 °C<br>
+						Yta: Fruset vatten, metan och ammoniak.<br>
+						Antal månar: 27 (Umbriel, Puck, Titania, Ariel med flera)
+					</p>
+				</section>
+			</section>
+			<section id="neptuneInfo" class="overlay">
+				<section class="popup">
+					<h4>Neptunus</h4>
+					<a class="close" href="#">×</a>
+					<p>
+						Upptäckt: 1846 av Johann Gottfried Galle som var en tysk astronom.<br>
+						Diameter: 49 530 km<br>
+						Omloppstid: 165 jordår<br>
+						Avstånd från solen: 4503 miljoner km<br>
+						Yttemperatur: -218 °C<br>
+						Yta: Fruset vatten och gas.<br>
+						Antal månar: 14 (Triton, Proteus med flera)
+					</p>
+				</section>
+			</section>
 		</div>
 	</body>
 </html>

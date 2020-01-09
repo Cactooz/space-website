@@ -45,7 +45,7 @@ nav a {
 	font-weight: bold;
 	text-decoration: none;
 	color: white;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	padding: 5px;
 }
 .wrapper {
@@ -81,7 +81,8 @@ nav a {
 		"header header header"
 		". . aside"
 		". main aside"
-		"infoText infoText aside";
+		"infoText infoText aside"
+		"galaxImage galaxImage aside";
 		grid-gap: 15px 3rem;
 		grid-template-rows: auto 60vh 60vh auto;
 		grid-template-columns: 30vw 60vh auto;
@@ -96,7 +97,7 @@ nav a {
 	}
 
 	/*Planet buttons*/
-	#home .sunButton, .mercuryButton, .venusButton, .earthButton, .marsButton, .jupiterButton, .saturnButton, .uranusButton, .neptuneButton {
+	#home .planetButton {
 		height: 20vh;
 		width: 20vh;
 		grid-area: image;
@@ -104,7 +105,7 @@ nav a {
 	
 	#home aside a {
 		display: grid;
-		grid-gap: 30px;
+		grid-gap: 3rem;
 		grid-template-areas: "image h2";
 		text-decoration: none;
 		color: white;
@@ -112,8 +113,57 @@ nav a {
 	
 	#home h2 {
 		grid-area: h2;
-		padding: 16px 0;
-		font-size: 50px;
+		padding: 1.5rem;
+		font-size: 2.5vw;
+	}
+	
+	#home .overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.6);
+		transition: opacity 500ms;
+		visibility: hidden;
+	}
+	
+	#home .overlay:target {
+		visibility: visible;
+	}
+
+	#home .popup {
+		margin: 10vh auto;
+		padding: 2rem;
+		background: white;
+		border-radius: 0.5rem;
+		width: 50%;
+		position: relative;
+		color: black;
+	}
+	
+	#home h4 {
+		margin-top: 0;
+		font-size: 3rem;
+	}
+	
+	#home .close {
+		position: absolute;
+		top: 1rem;
+		right: 1.5rem;
+		font-size: 2rem;
+		font-weight: bold;
+		text-decoration: none;
+		color: black;
+	}
+	
+	#home .galaxImage {
+		grid-area: galaxImage;
+		border: 2px solid white;
+		border-radius: 25px;
+		margin: 1%;
+		width: 97.5%;
+		height: auto;
 	}
 	
 	/*Planet facts text*/
@@ -123,7 +173,8 @@ nav a {
 		padding: 20px; 
 		border: 2px solid white;
 		border-radius: 25px;
-		margin: 10px;
+		margin: 1%;
+		text-align: center;
 	}
 	
 	/*Solar system planets*/
@@ -140,7 +191,6 @@ nav a {
 	  
 	#home .mercury {
 		left: 50%;
-		
 		height: 1.47vh;
 		width: 1.47vh;
 		margin-top: -0.74vh;
@@ -162,7 +212,6 @@ nav a {
 
 	#home .venus {
 		left: 50%;
-		
 		height: 3.6vh;
 		width: 3.6vh;
 		margin-top: -1.8vh;
@@ -213,7 +262,6 @@ nav a {
 
 	#home .moonOrbit {
 		left: 50%;
-
 		width: 4vh;
 		height: 4vh;
 		margin-top: -2vh;
@@ -226,7 +274,6 @@ nav a {
 	  
 	#home .mars {
 		left: 50%;
-
 		height: 2.04vh;
 		width: 2.04vh;
 		margin-top: -1.02vh;
@@ -248,7 +295,6 @@ nav a {
 
 	#home .jupiter {
 		left: 50%;
-		
 		height: 7vh;
 		width: 7vh;
 		margin-top: -3.5vh;
@@ -270,7 +316,6 @@ nav a {
 
 	#home .saturn {
 		left: 50%;
-		
 		height: 12.5vh;
 		width: 12.5vh;
 		margin-top: -6.25vh;
@@ -292,7 +337,6 @@ nav a {
 
 	#home .uranus {
 		left: 50%;
-	  
 		height: 2.5vh;
 		width: 2.5vh;
 		margin-top: -1.23vh;
@@ -314,7 +358,6 @@ nav a {
 
 	#home .neptune {
 		left: 50%;
-		
 		height: 2.5vh;
 		width: 2.5vh;
 		margin-top: -1.23vh;
