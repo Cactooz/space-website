@@ -392,6 +392,24 @@ nav a { /*Typselektor för a innuti nav*/
 			transform: rotate(360deg);
 		}
 	}
+		
+/*#rockets - rockets.html*/
+	#rockets main {
+		grid-area: main;
+	}
+	#rockets aside {
+		grid-area: aside;
+		margin: 1vw;
+	}
+	#rockets .rocketLaunchImage { /*Klasselektor för bild på första sidan - rocket.html*/
+		border: 2px solid white;
+		border-radius: 25px;
+		width: 100%;
+		margin: 1vw;
+	}
+	#rockets p:nth-child(odd) {
+		font-weight: bold;
+	}
 
 /*#rocketsCompanies - nasa.html, spacex.html*/
 	#rocketsCompanies main {
@@ -449,23 +467,6 @@ nav a { /*Typselektor för a innuti nav*/
 		text-align: center; /*Sätter texten i mitten*/
 		font-size: 30px; /*Textstorlek 30px*/
 		margin-bottom: 1rem; /*Sätter marginal mot andra element under captionen*/
-	}
-		
-/*#rockets - rockets.html*/
-	#rockets main {
-		grid-area: main;
-	}
-	#rockets aside {
-		grid-area: aside;
-	}
-	#rockets .rocketLaunchImage { /*Klasselektor för bild på första sidan - rocket.html*/
-		border: 2px solid white;
-		border-radius: 25px;
-		width: 100%;
-		margin: 1vw;
-	}
-	#rockets p:nth-child(odd) {
-		font-weight: bold;
 	}
 
 /*#galaxies - galaxies.html*/
