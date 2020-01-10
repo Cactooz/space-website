@@ -528,50 +528,71 @@ nav a { /*Typselektor för a innuti nav*/
 	height: 25%;
 }
 /*#blackhole - blackhole.html*/
-#blackhole h2 {
-	text-align: center;
-	font-size: 33px;
+#blackhole h2 { /* id selektor under rubrik*/
+	text-align: center;/* texten centreras*/
+	font-size: 33px;/*stroleken på texten är 33 px*/
 }
-.svartHål{
-	text-align: left;
-}
-
-.faktaSvartaHål{
-	border-style: solid;
-	border-width:5px;
-	border-color: white;
-}
-
 
 .border{
-	border-style: solid;
-	border-width:5px;
-	border-color: white;
-	border-radius: 25px;
-    background-color: rgba(100,100,100,0.5);
+	border-style: solid; /*En hel border*/
+	border-width:5px;/*5 pixlars bredd på min border*/ 
+	border-color: white;/* vit färg på min border*/
+	border-radius: 25px; /*Rundade kanter på bordern*/
+    background-color: rgba(100,100,100,0.5); /*Vit genomskinlig backgrund*/
+    font-family: Courier;/* text typ curier*/
+    padding:15px;/* text strolek */
+    text-align: center;/* centrerad tex*/
+    font color: white;/* vit text*/
     }
 
 .foto{
-    margin:0 auto;
-    width: 100%;
-    border-style: solid;
-    border-width:5px;
-    border-color: white;
-    border-radius: 25px;
+    margin:0 auto;/*Centrerar  fotot*/
+    width: 100%;/*Maxar bilden för utrymmet den har i sectionen*/
+    border-style: solid;/*solid border*/
+    border-width:5px;/* bredd på border*/
+    border-color: white;/*färg på border*/
+    border-radius: 25px;/*rundade kanter på bordern*/
     }
 
-#blackhole main {
-	grid-area: main;
-	grid-template-columns: 1fr 1fr;
-	display: grid;
-	grid-gap: 30px;
-	margin-left: 30px;
+#blackhole main {/*id selektor för main delen av htmlsidan*/
+	grid-area: main;/*Formar sidan*/
+	grid-template-columns: 1fr 1fr;/*ser till att det finns tre sektitoner på sidan*/
+	display: grid;/*Skapar min grid*/
+	grid-gap: 30px;/*Avståndet från kanterna*/
+	margin-left: 30px;/*att sidan förhåller sig åt höger*/
 }
 #blackhole aside {
-	grid-area: aside;
-	margin-right: 30px;
+	grid-area: aside;/*grid området för min aside text höger om bilden*/
+	margin-right: 30px;/*att sidan förhåller sig till vänster*/
 }
 
-p{
-	padding:10px;
+main a:link, main a:visited{/*Färgen på länkarna när man ser den och när den har varit visad*/
+    color: blue;
+    text-decoration: none;
+    
 }
+aside a:link, aside a:visited{
+    color: blue;
+    text-decoration: none;
+    
+}
+main a:hover{/*färgen på länken när man pekar på den*/
+    color:violet;
+}
+aside a:hover{
+    color:violet;
+}
+main a: focus{/*färgen på länken när man focuserar på den*/
+    color:violet;
+}
+aside a: focus{
+    color:violet;
+}
+main a:active{/* Färgen länken har när man tryckt på den*/
+    color:yellow;
+}
+    
+aside a:active{
+    color:yellow;
+}
+
