@@ -418,11 +418,11 @@ nav a {
 	margin-right: 100px;
 	padding: 10px;
 }
-#galaxies img {
+#galaxies .img {
   width: 150%;
   height: auto;
   border: 2px solid white;
-  margin-left: 120px;
+  margin-left: 220px;
   border-radius: 25px;
 }
 #galaxies p {
@@ -437,11 +437,38 @@ nav a {
 }
 #galaxies .vintergatan{
 	background-color: rgba(100,100,100,0.5);
-	padding: 20px; 
+	padding: 15px; 
+	margin-left: 20px;
 	border: 2px solid white;
     border-radius: 25px;
 }
-
+#galaxies .fakta{
+	background-color: rgba(100,100,100,0.5);
+	padding: 15px; 
+	margin-left: 20px;
+	border: 2px solid white;
+    border-radius: 25px;
+}
+#galaxies .img2{
+	width: 150%;
+	height: auto;
+	border: 2px solid white;
+	margin-left: 220px;
+	border-radius: 25px;
+}
+#galaxies .narmastegalaxer{
+	background-color: rgba(100,100,100,0.5);
+	padding: 15px; 
+	margin-left: 20px;
+	border: 2px solid white;
+    border-radius: 25px;
+}
+#galaxies .tabell, tr, td{
+	width: 150%;
+	height: auto;
+	border: 2px solid white;
+	margin-left: 220px;
+}
 /*#blackhole - blackhole.html*/
 #blackhole h2 {
 	text-align: center;
