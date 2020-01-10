@@ -458,7 +458,7 @@ nav a { /*Typselektor för a innuti nav*/
 }
 #galaxies aside {
 	grid-area: aside;
-	margin-right: 100px;
+	margin-right: 100px;                       /*Detta */
 	padding: 10px;
 }
 #galaxies .img {
@@ -478,39 +478,54 @@ nav a { /*Typselektor för a innuti nav*/
   text-align: center;
   font-family: Courier;
 }
-#galaxies .vintergatan{
+#galaxies .vintergatan {
 	background-color: rgba(100,100,100,0.5);
 	padding: 15px; 
 	margin-left: 20px;
 	border: 2px solid white;
     border-radius: 25px;
 }
-#galaxies .fakta{
+#galaxies .fakta {
 	background-color: rgba(100,100,100,0.5);
 	padding: 15px; 
 	margin-left: 20px;
 	border: 2px solid white;
     border-radius: 25px;
 }
-#galaxies .img2{
+#galaxies .img2 {
 	width: 150%;
 	height: auto;
 	border: 2px solid white;
 	margin-left: 220px;
 	border-radius: 25px;
 }
-#galaxies .narmastegalaxer{
+#galaxies .narmastegalaxer {
 	background-color: rgba(100,100,100,0.5);
 	padding: 15px; 
 	margin-left: 20px;
 	border: 2px solid white;
     border-radius: 25px;
 }
-#galaxies .tabell, tr, td{
+#galaxies .tabell, tr, td {
+	background-color: rgba(100,100,100,0.4);
 	width: 150%;
 	height: auto;
 	border: 2px solid white;
 	margin-left: 220px;
+	border-collapse: collapse;
+	text-align: center;
+	font-family: Courier;
+}
+#galaxies .col1 {
+	width: 25%;
+	padding: 25px;
+}
+#galaxies .col2 {
+	width: 50%;
+}
+#galaxies .col3 {
+	width: 25%;
+	height: 25%;
 }
 /*#blackhole - blackhole.html*/
 #blackhole h2 {
