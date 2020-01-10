@@ -76,8 +76,8 @@ nav a { /*Typselektor för a innuti nav*/
 		"infoText infoText aside"
 		"galaxImage galaxImage aside";
 		grid-gap: 15px 3rem;
-		grid-template-rows: auto 60vh 60vh auto;
-		grid-template-columns: 30vw 60vh auto;
+		grid-template-rows: auto 60vh 60vh auto; /*Sötter storleken på raderna i grid*/
+		grid-template-columns: 30vw 60vh auto; /*Sätter storlek på columnerna i griddet*/
 	}
 	#home main {
 		grid-area: main;
@@ -89,7 +89,7 @@ nav a { /*Typselektor för a innuti nav*/
 	}
 
 	/*Planet buttons*/
-	#home .planetButton {
+	#home .planetButton { /*Klasselektor för att klicka på planeten och få upp fakta modal*/
 		height: 20vh;
 		width: 20vh;
 		grid-area: image;
@@ -109,28 +109,28 @@ nav a { /*Typselektor för a innuti nav*/
 		font-size: 2.5vw;
 	}
 	
-	#home .overlay {
-		position: fixed;
-		top: 0;
-		bottom: 0;
+	#home .overlay { /*Bakgrunds overlay när modal är öppen*/
+		position: fixed; /*Sätter exakt position*/
+		top: 0; /*Gör den 0 ifrån toppen*/
+		bottom: 0; /*Gör den 0 ifrån botten räknar så ut sin storlek*/
 		left: 0;
 		right: 0;
-		background: rgba(0, 0, 0, 0.6);
-		transition: opacity 500ms;
-		visibility: hidden;
+		background: rgba(0, 0, 0, 0.6); /*Gör svar bakgrund med 40% genomskilninghet*/
+		transition: opacity 0.5s; /*Ändrar opaciteten över en halv sekund*/
+		visibility: hidden; /*Modalen syns inte*/
 	}
 	
-	#home .overlay:target {
-		visibility: visible;
+	#home .overlay:target { /*Visar modalen när man han klickat så man har rätt id*/
+		visibility: visible; /*Visar modalen*/
 	}
 
-	#home .popup {
+	#home .popup { /*Hur modalen ser ut*/
 		margin: 10vh auto;
 		padding: 2rem;
 		background: white;
 		border-radius: 0.5rem;
 		width: 50%;
-		position: relative;
+		position: relative; /*Gör allt i popupen relativt till popupen*/
 		color: black;
 	}
 	
@@ -139,27 +139,27 @@ nav a { /*Typselektor för a innuti nav*/
 		font-size: 3rem;
 	}
 	
-	#home .close {
+	#home .close { /*Stäng knapp på modal på första sidan som har id #home*/
 		position: absolute;
 		top: 1rem;
 		right: 1.5rem;
 		font-size: 2rem;
 		font-weight: bold;
-		text-decoration: none;
+		text-decoration: none; /*Tar bort understruket från länken*/
 		color: black;
 	}
 	
-	#home .galaxImage {
+	#home .galaxImage { /*Klasselektor hur bilden på vintergatan ser ut*/
 		grid-area: galaxImage;
 		border: 2px solid white;
 		border-radius: 25px;
 		margin: 1%;
-		width: 97.5%;
-		height: auto;
+		width: 97.5%; /*Gör bildens brädd till 97.5%*/
+		height: auto; /*Sätter automatisk höjd jämfört med bredden*/
 	}
 	
 	/*Planet facts text*/
-	#home .infoText {
+	#home .infoText { /*Klasselektor för info text om hur planeterna är skalade*/
 		grid-area: infoText;
 		background-color: rgba(100,100,100,0.25);
 		padding: 20px; 
@@ -170,36 +170,37 @@ nav a { /*Typselektor för a innuti nav*/
 	}
 	
 	/*Solar system planets*/
-	#home .absolute {
+	#home .absolute { /*Gör alla planete absolute så man kan ge den exakt den positionen man vill ha*/
 		position: absolute;
 	}
 
-	#home .sun {
+	#home .sun { /*Position och storlek för solen*/
 		height: 20vh;
 		width: 20vh;
 		margin-top: -10vh; 
 		margin-left: -10vh;
 	}
 	  
-	#home .mercury {
-		left: 50%;
+	#home .mercury { /*Position och storlek för merkurius*/
+		left: 50%; /*Flyttar den 50% från mitten så att den inte är fel på omloppsbanan*/
 		height: 1.47vh;
 		width: 1.47vh;
 		margin-top: -0.74vh;
 		margin-left: -0.74vh;
 	}
 
-	#home .mercuryOrbit {
-		width: 25.7vh;
-		height: 25.7vh;
-		margin-top: -12.85vh;
+	#home .mercuryOrbit { /*Omloppsbana för merkurius*/
+		width: 25.7vh; /*Bredd på merkurius omloppsbana sektion*/
+		height: 25.7vh; /*Höjd på merkurius omloppsbana sektion*/
+		margin-top: -12.85vh; /*marginal på merkurius omloppsbana sektion för att få den centrerad runt solen*/
 		margin-left: -12.85vh;
-		border: 2px solid white;
-		border-radius: 50%;
+		border: 2px solid white; /*Omloppsbana border, 2px bred vit och hel*/
+		border-radius: 50%; /*Gör borderns hörn runda, 50% gör den till en cirkel*/
 
-		-webkit-animation: spin-right 4.4s linear infinite;
-		-moz-animation: spin-right 4.4s linear infinite;
-		animation: spin-right 4.4s linear infinite;
+		/*Beskriver hur sektionen ska rotera åt höger för evigt en gång var 4.4 sekunder*/
+		-webkit-animation: spin-right 4.4s linear infinite; /*För iOS - Får varning i validator men det är inget problem*/
+		-moz-animation: spin-right 4.4s linear infinite; /*För Firefox - Får varning i validator men det är inget problem*/
+		animation: spin-right 4.4s linear infinite; /*För Chrome, Edge mm.*/
 	  }
 
 	#home .venus {
@@ -368,19 +369,18 @@ nav a { /*Typselektor för a innuti nav*/
 		animation: spin-right 3012.8s linear infinite;
 	}
 
-	/*Rotating animation*/
-
-	@-webkit-keyframes spin-right {
+	/*Roterings animation, gör att allt roterar*/
+	@-webkit-keyframes spin-right { /*För iOS - Får varning i validator men det är inget problem*/
 	  100% {
 		  -webkit-transform: rotate(360deg);
 	  }
 	}
-	@-moz-keyframes spin-right {
+	@-moz-keyframes spin-right { /*För Firefox - Får varning i validator men det är inget problem*/
 		100% {
 			-webkit-transform: rotate(360deg);
 		}
 	}
-	@keyframes spin-right {
+	@keyframes spin-right { /*För Chrome, Edge mm.*/
 		100% {
 			transform: rotate(360deg);
 		}
@@ -396,7 +396,7 @@ nav a { /*Typselektor för a innuti nav*/
 		display: grid;
 		grid-gap: 30px;
 	}
-	#rockets .rocketImage {
+	#rockets .rocketImage { /*Bilder på raketer på nasa och spacex sidorna*/
 		height: auto;
 		width: 300px;
 		display: grid;
@@ -406,12 +406,12 @@ nav a { /*Typselektor för a innuti nav*/
 		margin: 10px;
 	}
 
-	#rockets .logoImage {
+	#rockets .logoImage { /*Storlek på loggorna för Nasa och SpaceX*/
 		height: auto;
 		width: 500px;
 	}
 
-	#rockets .wrapper {
+	#rockets .wrapper { /*Egen grid wrapper för rocket sidorna*/
 	grid-template-areas:
 	"header header header"
 	"nav2 nav2 nav2"
@@ -425,23 +425,23 @@ nav a { /*Typselektor för a innuti nav*/
 	}
 	
 	#rockets table {
-		background-color: rgba(100,100,100,0.25);
+		background-color: rgba(100,100,100,0.25); /*Bakgrundsfärg för tabellen*/
 	}
 	
 	#rockets caption { /*Typselektor för titeln till tabellen, centrerar texten och gör textstorleken till 30 pixlar*/
-	text-align: center;
-	font-size: 30px;
+	text-align: center; /*Sätter texten i mitten*/
+	font-size: 30px; /*Textstorlek 30px*/
 	}
 	
 	#rockets .factBox {
-		background-color: rgba(100,100,100,0.25);
+		background-color: rgba(100,100,100,0.25); /*Gör bakgrundsfärg svart med 75% genomskilninghet*/
 		padding: 15px; 
 		margin-left: 20px;
 		border: 2px solid white;
 		border-radius: 25px;
 	}
 	
-	#rockets .rocketLaunchImage {
+	#rockets .rocketLaunchImage { /*Klasselektor för bild på första sidan - rocket.html*/
 		border: 2px solid white;
 		border-radius: 25px;
 		width: 96vw;
