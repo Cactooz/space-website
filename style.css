@@ -468,7 +468,7 @@ nav a { /*Typselektor för a innuti nav*/
   margin-left: 220px; /*Flyttar bilden till vänster 220 pixlar*/
   border-radius: 25px; /*Gör runda kanter runt bilden med storlek på 25 pixlar*/
 }
-#galaxies p, h2 { /*Selektor för texten och Rubriken på alla sidor*/
+#galaxies h2, p { /*Selektor för texten och Rubriken på alla sidor*/
   color: white; /*Gör om texten til färgen vit*/
   text-align: center; /*Gör så att texten centreras*/
   font-family: Courier; /*Ändrar fonten på texten*/
@@ -529,7 +529,7 @@ nav a { /*Typselektor för a innuti nav*/
 	font-size: 33px;/*stroleken på texten är 33 px*/
 }
 
-.border{
+#blackhole .border{
 	border-style: solid; /*En hel border*/
 	border-width:5px;/*5 pixlars bredd på min border*/ 
 	border-color: white;/* vit färg på min border*/
@@ -538,10 +538,10 @@ nav a { /*Typselektor för a innuti nav*/
     font-family: Courier;/* text typ curier*/
     padding:15px;/* text strolek */
     text-align: center;/* centrerad tex*/
-    font color: white;/* vit text*/
+    color: white;/* vit text*/
     }
 
-.foto{
+#blackhole .foto{
     margin:0 auto;/*Centrerar  fotot*/
     width: 100%;/*Maxar bilden för utrymmet den har i sectionen*/
     border-style: solid;/*solid border*/
@@ -562,33 +562,32 @@ nav a { /*Typselektor för a innuti nav*/
 	margin-right: 30px;/*att sidan förhåller sig till vänster*/
 }
 
-main a:link, main a:visited{/*Färgen på länkarna när man ser den och när den har varit visad*/
+#blackhole main a:link, main a:visited{/*Färgen på länkarna när man ser den och när den har varit visad*/
     color: blue;
     text-decoration: none;
     
 }
-aside a:link, aside a:visited{
+#blackhole aside a:link, aside a:visited{
     color: blue;
     text-decoration: none;
     
 }
-main a:hover{/*färgen på länken när man pekar på den*/
+#blackhole main a:hover{/*färgen på länken när man pekar på den*/
     color:violet;
 }
-aside a:hover{
+#blackhole aside a:hover{
     color:violet;
 }
-main a: focus{/*färgen på länken när man focuserar på den*/
+#blackhole main a: focus{/*färgen på länken när man focuserar på den*/
     color:violet;
 }
-aside a: focus{
+#blackhole aside a: focus{
     color:violet;
 }
-main a:active{/* Färgen länken har när man tryckt på den*/
+#blackhole main a:active{/* Färgen länken har när man tryckt på den*/
     color:yellow;
 }
     
-aside a:active{
+#blackhole aside a:active{
     color:yellow;
 }
-
