@@ -46,7 +46,7 @@ nav a { /*Typselektor för a innuti nav*/
 	font-size: 1.5rem; /*Sätter fontstorleken till 1.5rem*/
 	padding: 5px;
 }
-.wrapper { /*Klasselektor för wrapper som gör grid*/
+.wrapper { /*Klasselektor för wrapper som gör grid för de sidorna som inte behöver en egen speciell grid*/
 	display: grid; /*Visar ett grid*/
 	grid-template-columns: 1fr 1fr 1fr; /*Delar upp den i tre lika stora kolumner*/
 	grid-template-areas: /*Bestämmer var de olika elementen ska visas i gridet*/
@@ -63,6 +63,14 @@ nav a { /*Typselektor för a innuti nav*/
 .lowernav { /*Klasselektor flr lowernav*/
 	display: grid; /*Gör ett grid*/
 	grid-area: nav2; /*Ger gridet namnet nav2*/
+}
+.factBox { /*Klasselektor för info textrutor - används på index.html, rockets.html, nasa.html & spacex.html*/
+	background-color: rgba(100,100,100,0.25); /*Gör bakgrundsfärg svart med 75% genomskilninghet*/
+	padding: 20px; 
+	border: 2px solid white;
+	border-radius: 25px;
+	margin: 1%;
+	text-align: center;
 }
 
 /*#home - index.html*/
@@ -125,13 +133,13 @@ nav a { /*Typselektor för a innuti nav*/
 	}
 
 	#home .popup { /*Hur modalen ser ut*/
-		margin: 10vh auto;
-		padding: 2rem;
-		background: white;
-		border-radius: 0.5rem;
-		width: 50%;
+		margin: 10vh auto; /*Marginal runt modalen så att den kommer i mitten*/
+		padding: 2rem; /*Padding så att texten inte kommer i kanten av modalen*/
+		background: white; /*Bakgrundsfärg vit*/
+		border-radius: 0.5rem; /*Rundar av hörnen*/
+		width: 50%; /*Bredden på modalen*/
 		position: relative; /*Gör allt i popupen relativt till popupen*/
-		color: black;
+		color: black; /*Textfärgen i modalen*/
 	}
 	
 	#home h4 {
@@ -159,14 +167,12 @@ nav a { /*Typselektor för a innuti nav*/
 	}
 	
 	/*Planet facts text*/
-	#home .infoText { /*Klasselektor för info text om hur planeterna är skalade*/
-		grid-area: infoText;
-		background-color: rgba(100,100,100,0.25);
-		padding: 20px; 
-		border: 2px solid white;
-		border-radius: 25px;
-		margin: 1%;
-		text-align: center;
+	#home .factBox {
+		grid-area: infoText; /*Ger element med factBox klassen gridarea namnet infoText i sidan med id #home (index.html)*/
+	}
+	
+	#home p:nth-child(even) { /*Gör det andra, fjärde och så vidare elementet paragraf texten till bold*/
+		font-weight: bold;
 	}
 	
 	/*Solar system planets*/
@@ -197,7 +203,7 @@ nav a { /*Typselektor för a innuti nav*/
 		border: 2px solid white; /*Omloppsbana border, 2px bred vit och hel*/
 		border-radius: 50%; /*Gör borderns hörn runda, 50% gör den till en cirkel*/
 
-		/*Beskriver hur sektionen ska rotera åt höger för evigt en gång var 4.4 sekunder*/
+		/*Beskriver hur sektionen ska rotera åt höger för evigt en gång var 4.4 sekunder i en linjär rörelse*/
 		-webkit-animation: spin-right 4.4s linear infinite; /*För iOS - Får varning i validator men det är inget problem*/
 		-moz-animation: spin-right 4.4s linear infinite; /*För Firefox - Får varning i validator men det är inget problem*/
 		animation: spin-right 4.4s linear infinite; /*För Chrome, Edge mm.*/
@@ -259,9 +265,9 @@ nav a { /*Typselektor för a innuti nav*/
 		margin-top: -2vh;
 		margin-left: -2vh;
 
-		-webkit-animation: spin-right 0.24s linear infinite;
-		-moz-animation: spin-right 0.24s linear infinite;
-		animation: spin-right 0.24s linear infinite;
+		-webkit-animation: spin-right 2.4s linear infinite;
+		-moz-animation: spin-right 2.4s linear infinite;
+		animation: spin-right 2.4s linear infinite;
 	  }
 	  
 	#home .mars {
@@ -369,11 +375,12 @@ nav a { /*Typselektor för a innuti nav*/
 		animation: spin-right 3012.8s linear infinite;
 	}
 
-	/*Roterings animation, gör att allt roterar*/
+	/*Roterings animation, efter alla planeter har fått sin animations timing definerad måste man definiera hur animationen ska utföras*/
+	/*Börjar transformera på 0% och går till nästa keyframe 100% där alla planeter har fått en transform som har roterat sectionen 360 grader */
 	@-webkit-keyframes spin-right { /*För iOS - Får varning i validator men det är inget problem*/
-	  100% {
-		  -webkit-transform: rotate(360deg);
-	  }
+		100% { /*Hur elementet ska se ut efter 100%*/
+			-webkit-transform: rotate(360deg); /*Roterar sektionen 360 grader åt höger*/
+		}
 	}
 	@-moz-keyframes spin-right { /*För Firefox - Får varning i validator men det är inget problem*/
 		100% {
@@ -386,17 +393,23 @@ nav a { /*Typselektor för a innuti nav*/
 		}
 	}
 
-/*#rockets - rockets.html*/
-	#rockets main {
+/*#rocketsCompanies - nasa.html, spacex.html*/
+	#rocketsCompanies main {
 		grid-area: main;
 	}
-	#rockets aside {
+	#rocketsCompanies aside {
 		grid-area: aside;
 		grid-template-columns: 25% auto;
 		display: grid;
 		grid-gap: 30px;
 	}
-	#rockets .rocketImage { /*Bilder på raketer på nasa och spacex sidorna*/
+	
+	#rocketsCompanies h2 {
+		font-size: 2rem;
+		margin-bottom: 0;
+	}
+	
+	#rocketsCompanies .rocketImage { /*Bilder på raketer på nasa och spacex sidorna*/
 		height: auto;
 		width: 300px;
 		display: grid;
@@ -406,46 +419,53 @@ nav a { /*Typselektor för a innuti nav*/
 		margin: 10px;
 	}
 
-	#rockets .logoImage { /*Storlek på loggorna för Nasa och SpaceX*/
+	#rocketsCompanies .logoImage { /*Storlek på loggorna för Nasa och SpaceX*/
 		height: auto;
 		width: 500px;
 	}
 
-	#rockets .wrapper { /*Egen grid wrapper för rocket sidorna*/
-	grid-template-areas:
-	"header header header"
-	"nav2 nav2 nav2"
-	". . ."
-	"main aside aside";
+	#rocketsCompanies .wrapper { /*Egen grid wrapper för nasa och spacex sidorna*/
+		grid-template-areas:
+		"header header header"
+		"nav2 nav2 nav2"
+		". . ."
+		"main aside aside";
 	}
 	
-	#rockets table, td { /*Gruppselektor och typselektor för table och td, inte th*/
-	border: 3px solid white; /*Gör en ram runt cellerna som är hel, 3 pixlar bred och svart*/
-	border-collapse: collapse; /*Lägger ihop linjerna till en itället för två mellan cellerna*/
+	#rocketsCompanies table, td { /*Gruppselektor och typselektor för table och td, inte th*/
+		border: 3px solid white; /*Gör en ram runt cellerna som är hel, 3 pixlar bred och svart*/
+		border-collapse: collapse; /*Lägger ihop linjerna till en itället för två mellan cellerna*/
 	}
 	
-	#rockets table {
+	#rocketsCompanies table {
 		background-color: rgba(100,100,100,0.25); /*Bakgrundsfärg för tabellen*/
 	}
 	
-	#rockets caption { /*Typselektor för titeln till tabellen, centrerar texten och gör textstorleken till 30 pixlar*/
-	text-align: center; /*Sätter texten i mitten*/
-	font-size: 30px; /*Textstorlek 30px*/
+	#rocketsCompanies td, #rocketsCompanies th {
+		padding: 0.7rem;
 	}
 	
-	#rockets .factBox {
-		background-color: rgba(100,100,100,0.25); /*Gör bakgrundsfärg svart med 75% genomskilninghet*/
-		padding: 15px; 
-		margin-left: 20px;
-		border: 2px solid white;
-		border-radius: 25px;
+	#rocketsCompanies caption { /*Typselektor för titeln till tabellen, centrerar texten och gör textstorleken till 30 pixlar*/
+		text-align: center; /*Sätter texten i mitten*/
+		font-size: 30px; /*Textstorlek 30px*/
+		margin-bottom: 1rem; /*Sätter marginal mot andra element under captionen*/
 	}
-	
+		
+/*#rockets - rockets.html*/
+	#rockets main {
+		grid-area: main;
+	}
+	#rockets aside {
+		grid-area: aside;
+	}
 	#rockets .rocketLaunchImage { /*Klasselektor för bild på första sidan - rocket.html*/
 		border: 2px solid white;
 		border-radius: 25px;
-		width: 96vw;
+		width: 100%;
 		margin: 1vw;
+	}
+	#rockets p:nth-child(odd) {
+		font-weight: bold;
 	}
 
 /*#galaxies - galaxies.html*/
@@ -578,10 +598,10 @@ nav a { /*Typselektor för a innuti nav*/
 #blackhole aside a:hover{
     color:violet;
 }
-#blackhole main a: focus{/*färgen på länken när man focuserar på den*/
+#blackhole main a:focus{/*färgen på länken när man focuserar på den*/
     color:violet;
 }
-#blackhole aside a: focus{
+#blackhole aside a:focus{
     color:violet;
 }
 #blackhole main a:active{/* Färgen länken har när man tryckt på den*/
