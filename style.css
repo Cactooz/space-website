@@ -462,30 +462,30 @@ nav a { /*Typselektor för a innuti nav*/
 	padding: 10px; /*Gör så att det blir mer plats runt texten med 15 pixlar*/
 }
 #galaxies .img { /*Klassselktor för bilden på första sidan*/
-  width: 150%; /*Ändrar storleken på bilden med 150 procent*/
-  height: auto; /*Justerar höjden automatiskt*/
-  border: 2px solid white; /*Gör en kant runt bilden med vit färg med storleken 2 pixlar*/
-  margin-left: 220px; /*Flyttar bilden till vänster 220 pixlar*/
-  border-radius: 25px; /*Gör runda kanter runt bilden med storlek på 25 pixlar*/
+        width: 150%; /*Ändrar storleken på bilden med 150 procent*/
+        height: auto; /*Justerar höjden automatiskt*/
+        border: 2px solid white; /*Gör en kant runt bilden med vit färg med storleken 2 pixlar*/
+        margin-left: 220px; /*Flyttar bilden till vänster 220 pixlar*/
+        border-radius: 25px; /*Gör runda kanter runt bilden med storlek på 25 pixlar*/
 }
-#galaxies h2, #galaxies p { /*Selektor för texten och Rubriken på alla sidor*/
-  color: white; /*Gör om texten til färgen vit*/
-  text-align: center; /*Gör så att texten centreras*/
-  font-family: Courier; /*Ändrar fonten på texten*/
+#galaxies p, h2 { /*Selektor för texten och Rubriken på alla sidor*/
+        color: white; /*Gör om texten til färgen vit*/
+        text-align: center; /*Gör så att texten centreras*/
+        font-family: Courier; /*Ändrar fonten på texten*/
 }
 #galaxies .vintergatan { /*Klassselktor för sektionen om vintergatan*/
 	background-color: rgba(100,100,100,0.5); /*Gör bakgrunden genomskinlig*/
 	padding: 15px; /*Gör så att det blir mer plats runt texten med 15 pixlar*/
-	margin-left: 20px; /*Flyttar bilden till vänster 20 pixlar*/
-	border: 2px solid white; /*Gör en kant runt bilden med vit färg med storleken 2 pixlar*/
-    border-radius: 25px; /*Gör runda kanter runt bilden med storlek på 25 pixlar*/
+	margin-left: 20px; /*Flyttar textrutan till vänster 20 pixlar*/
+	border: 2px solid white; /*Gör en kant runt textrutan med vit färg med storleken 2 pixlar*/
+    border-radius: 25px; /*Gör runda kanter runt textrutan med storlek på 25 pixlar*/
 }
 #galaxies .fakta { /*Klassselktor för sektionen om fakta*/
 	background-color: rgba(100,100,100,0.5); /*Gör bakgrunden genomskinlig*/
 	padding: 15px; /*Gör så att det blir mer plats runt texten med 15 pixlar*/
-	margin-left: 20px; /*Flyttar bilden till vänster 20 pixlar*/
-	border: 2px solid white; /*Gör en kant runt bilden med vit färg med storleken 2 pixlar*/
-    border-radius: 25px; /*Gör runda kanter runt bilden med storlek på 25 pixlar*/
+	margin-left: 20px; /*Flyttar textrutan till vänster 20 pixlar*/
+	border: 2px solid white; /*Gör en kant runt textrutan med vit färg med storleken 2 pixlar*/
+    border-radius: 25px; /*Gör runda kanter runt textrutan med storlek på 25 pixlar*/
 }
 #galaxies .img2 { /*Klassselktor för bilden på fakta sidan*/
 	width: 150%; /*Ändrar storleken på bilden med 150 procent*/
@@ -498,11 +498,11 @@ nav a { /*Typselektor för a innuti nav*/
 	background-color: rgba(100,100,100,0.5); /*Gör bakgrunden genomskinlig*/
 	padding: 15px; /*Gör så att det blir mer plats runt texten med 15 pixlar*/
 	height: 50%; /*Ändrar på storleken på texrutan med 50 procent på höjden*/
-	margin-left: 20px; /*Flyttar bilden till vänster 20 pixlar*/
-	border: 2px solid white; /*Gör en kant runt bilden med vit färg med storleken 2 pixlar*/
-    border-radius: 25px; /*Gör runda kanter runt bilden med storlek på 25 pixlar*/
+	margin-left: 20px; /*Flyttar textrutan till vänster 20 pixlar*/
+	border: 2px solid white; /*Gör en kant runt textrutan med vit färg med storleken 2 pixlar*/
+    border-radius: 25px; /*Gör runda kanter runt textrutan med storlek på 25 pixlar*/
 }
-#galaxies .tabell, #galaxies tr, #galaxies td { /*Klassselktor för tabellen*/
+#galaxies .tabell, tr, td { /*Klassselktor för tabellen*/
 	background-color: rgba(100,100,100,0.4); /*Gör bakgrunden genomskinlig*/
 	width: 150%;  /*Ändrar storleken på tabellen med 150 procent*/
 	height: auto; /*Justerar höjden automatiskt*/
@@ -514,7 +514,7 @@ nav a { /*Typselektor för a innuti nav*/
 }
 #galaxies .col1 {; /*Klasselektor för första kolumnen och neråt*/
 	width: 25%; /*Ändrar på storleken på kolumnen med 25 procent på bredden*/
-	padding: 25px; /*Gör så att det blir mer plats runt texten med 25 pixlar*/
+	padding: 25px; /*Gör så att det blir mer plats runt kolumnen med 25 pixlar*/
 }
 #galaxies .col2 { /*Klasselektor för andra kolumnen och neråt*/
 	width: 50%; /*Ändrar på storleken på kolumnen med 50 procent på bredden*/
