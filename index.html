@@ -1,20 +1,29 @@
-<!DOCTYPE html>
-<html lang="sv">
+<!DOCTYPE html> <!--Identifierar vilken version av HTML som används-->
+<!--Början av html-->
+<html lang="sv"> <!--Gör så att sidan är på svenska-->
+	<!--Början av head, det som händer i bakgrunder-->
 	<head>
-		<meta charset="UTF-8">
-		<link href="style.css" rel="stylesheet">
-		<link href="images/favicon.png" rel="icon">
-		<title>Rymden - Hem</title>
+		<meta charset="UTF-8"> <!--Tekenkodning UTF-8-->
+		<link href="style.css" rel="stylesheet"> <!--Länka in css dokumentet-->
+		<link href="images/favicon.png" rel="icon"> <!--Favicon för hemsidan-->
+		<title>Rymden - Hem</title> <!--Titel för hemsidan-->
 	</head>
+	<!--Slut av head-->
+	<!--Början av body, det som användaren ser-->
 	<body id="home">
-		<div class="wrapper">
+		<div class="wrapper"> <!--Wrapper för grid på hemsidan-->
+			<!--Början av header-->
 			<header>
-				<h1>Rymden</h1>
+				<h1>Rymden</h1> <!--Huvudrubrik-->
+				<!--Början av navbaren-->
 				<nav>
+					<!--Början av första list item-->
 					<ul>
+						<!--Början av punkt lista-->
 						<li>
-							<a class="active">Hem</a>
+							<a class="active">Hem</a> <!--Ett meny val-->
 						</li>
+						<!--Slutet av första list item-->
 						<li>
 							<a href="rockets.html">Raketer</a>
 						</li>
@@ -25,109 +34,120 @@
 							<a href="blackhole.html">Svart Hål</a>
 						</li>
 					</ul>
+					<!--Slutet av punkt lista-->
 				</nav>
+				<!--Slutet av navbaren-->
 			</header>
+			<!--Slutet av header-->
+			
+			<!--Början av main-->
 			<main>
-				<section>
-					<img class="absolute sun" src="images\sun.png" alt="Bild på Solen">
-					
-					<section class="absolute mercuryOrbit">
-						<img class="absolute mercury" src="images\mercury.png" alt="Bild på Merkurius">
+				<img class="absolute sun" src="images/sun.png" alt="Bild på Solen"> <!--Bild för solen i mitten av solsystemet-->
+				
+				<!--Section för merkurius omloppsbana-->
+				<section class="absolute mercuryOrbit">
+					<img class="absolute mercury" src="images/mercury.png" alt="Bild på Merkurius"> <!--Bild på Merkuris på kanten av sektionen-->
+				</section>
+				
+				<section class="absolute venusOrbit">
+					<img class="absolute venus" src="images/venus.png" alt="Bild på Venus">
+				</section>
+				
+				<section class="absolute earthOrbit">        
+					<img class="absolute earth" src="images/earth.png" alt="Bild på Jorden">
+				
+					<section class="absolute moonOrbit">
+						<img class="absolute moon" src="images/moon.png" alt="Bild på Månen">
 					</section>
-					
-					<section class="absolute venusOrbit">
-						<img class="absolute venus" src="images\venus.png" alt="Bild på Venus">
-					</section>
-					
-					<section class="absolute earthOrbit">        
-						<img class="absolute earth" src="images\earth.png" alt="Bild på Jorden">
-					
-						<section class="absolute moonOrbit">
-							<img class="absolute moon" src="images\moon.png" alt="Bild på Månen">
-						</section>
-					</section>
-					
-					 <section class="absolute marsOrbit">
-						<img class="absolute mars" src="images\mars.png" alt="Bild på Mars">
-					</section>
-					
-					<section class="absolute jupiterOrbit">
-						<img class="absolute jupiter" src="images\jupiter.png" alt="Bild på Jupiter">
-					</section>
-					
-					<section class="absolute saturnOrbit">
-						<img class="absolute saturn" src="images\saturn.png" alt="Bild på Saturnus">
-					</section>
-					
-					<section class="absolute uranusOrbit">
-						<img class="absolute uranus" src="images\uranus.png" alt="Bild på Uranus">
-					</section>
-					
-					<section class="absolute neptuneOrbit">
-						<img class="absolute neptune" src="images\neptune.png" alt="Bild på Neptunus">
-					</section>
+				</section>
+				
+				 <section class="absolute marsOrbit">
+					<img class="absolute mars" src="images/mars.png" alt="Bild på Mars">
+				</section>
+				
+				<section class="absolute jupiterOrbit">
+					<img class="absolute jupiter" src="images/jupiter.png" alt="Bild på Jupiter">
+				</section>
+				
+				<section class="absolute saturnOrbit">
+					<img class="absolute saturn" src="images/saturn.png" alt="Bild på Saturnus">
+				</section>
+				
+				<section class="absolute uranusOrbit">
+					<img class="absolute uranus" src="images/uranus.png" alt="Bild på Uranus">
+				</section>
+				
+				<section class="absolute neptuneOrbit">
+					<img class="absolute neptune" src="images/neptune.png" alt="Bild på Neptunus">
 				</section>
 			</main>
+			<!--Slut på main-->
+			
+			<!--Början på aside-->
 			<aside>
+				<!--Section för att klicka på planet för att få upp modal-->
 				<section>
-					<a href="#sunInfo">
-						<img class="planetButton" src="images\sun.png" alt="Bild på Solen">
-						<h2>Solen</h2>
-					</a>
+					<a href="#sunInfo"> <!--Länk för modal med id:et #sunInfo-->
+						<img class="planetButton" src="images/sun.png" alt="Bild på Solen"> <!--Bild på planeten-->
+						<h2>Solen</h2> <!--Rubrik med planetens namn-->
+					</a> <!--Slut på länken-->
 				</section>
+				<!--Slut på första sektionen-->
 				<section>
 					<a href="#mercuryInfo">
-						<img class="planetButton" src="images\mercury.png" alt="Bild på Merkurius">
+						<img class="planetButton" src="images/mercury.png" alt="Bild på Merkurius">
 						<h2>Merkurius</h2>
 					</a>
 				</section>
 				<section>
 					<a href="#venusInfo">
-						<img class="planetButton" src="images\venus.png" alt="Bild på Venus">
+						<img class="planetButton" src="images/venus.png" alt="Bild på Venus">
 						<h2>Venus</h2>
 					</a>
 				</section>
 				<section>
 					<a href="#earthInfo">
-						<img class="planetButton" src="images\earth.png" alt="Bild på the Jorden">
+						<img class="planetButton" src="images/earth.png" alt="Bild på the Jorden">
 						<h2>Jorden</h2>
 					</a>
 				</section>
 				<section>
 					<a href="#marsInfo">
-						<img class="planetButton" src="images\mars.png" alt="Bild på Mars">
+						<img class="planetButton" src="images/mars.png" alt="Bild på Mars">
 						<h2>Mars</h2>
 					</a>
 				</section>
 				<section>
 					<a href="#jupiterInfo">
-						<img class="planetButton" src="images\jupiter.png" alt="Bild på Jupiter">
+						<img class="planetButton" src="images/jupiter.png" alt="Bild på Jupiter">
 						<h2>Jupiter</h2>
 					</a>
 				</section>
 				<section>
 					<a href="#satrunInfo">
-						<img class="planetButton" src="images\saturn.png" alt="Bild på Saturnus">
+						<img class="planetButton" src="images/saturn.png" alt="Bild på Saturnus">
 						<h2>Saturnus</h2>
 					</a>
 				</section>
 				<section>
 					<a href="#uranusInfo">
-						<img class="planetButton" src="images\uranus.png" alt="Bild på Uranus">
+						<img class="planetButton" src="images/uranus.png" alt="Bild på Uranus">
 						<h2>Uranus</h2>
 					</a>
 				</section>
 				<section>
 					<a href="#neptuneInfo">
-						<img class="planetButton" src="images\neptune.png" alt="Bild på Neptunus">
+						<img class="planetButton" src="images/neptune.png" alt="Bild på Neptunus">
 						<h2>Neptunus</h2>
 					</a>
 				</section>
 			</aside>
+			<!--Slut på aside-->
+			<!--Section med information ruta hur alla planeter och omloppsbanor är skalade-->
 			<section class="infoText">
 				<h3>Skalnings Information</h3>
-				<p>
-					Storlek:<br>
+				<p> <!--Paragraf med text-->
+					Storlek:<br> <!--Break för en ny rad-->
 					Solen - 1:7000<br>
 					Merkuris, Venus, Jorden & Mars - 3:1<br>
 					Jupiter, Saturnus, Uranus & Neptunus - 1:2<br>
@@ -137,25 +157,32 @@
 					<br>
 					Omloppsbana:<br>
 					Merkuris, Venus, Jorden & Mars - 1:1<br>
-					Jupiter & Saturnus 1:2<br>
+					Jupiter & Saturnus - 1:2<br>
 					Uranus - 1:3<br>
 					Neptunus - 1:4
 				</p>
 			</section>
+			<!--Slut på information sektionen-->
+			<!--Bild på vintergatan-->
 			<img class="galaxImage" src="images/vintergatan.jpg" alt="Bild på våran hem galax, Vintergatan">
+			
 			<!--Modals-->
+			<!--Stor sektion över hela sidan med bakgrundsfärg bakom modalen-->
 			<section id="sunInfo" class="overlay">
+				<!--Section för själva modalen-->
 				<section class="popup">
-					<h4>Solen</h4>
-					<a class="close" href="#">×</a>
-					<p>
+					<h4>Solen</h4> <!--Rubrik i modalen-->
+					<a class="close" href="#">×</a> <!--Kryss för att stänga modalen och gå tillbaka till vanliga sidan (#)-->
+					<p> <!--Paragraf med information-->
 						Bildades: 4,6 miljarder år sedan<br>
 						Temperatur i kärnan: 15 miljoner °C<br>
 						Massa: 333 000 gånger jordens massa<br>
 						Yta: Solens yta består av 6000 °C het gas som består till största delen av väte (70%)
 					</p>
 				</section>
+				<!--Slut på modalen-->
 			</section>
+			<!--Slut på modal bakgrund-->
 			<section id="mercuryInfo" class="overlay">
 				<section class="popup">
 					<h4>Merkurius</h4>
@@ -277,5 +304,8 @@
 				</section>
 			</section>
 		</div>
+		<!--Slut på grid wrappern-->
 	</body>
+	<!--Slut på body-->
 </html>
+<!--Slut på html dokumentet-->
