@@ -399,9 +399,7 @@ nav a { /*Typselektor för a innuti nav*/
 	}
 	#rocketsCompanies aside {
 		grid-area: aside;
-		grid-template-columns: 25% auto;
 		display: grid;
-		grid-gap: 30px;
 	}
 	
 	#rocketsCompanies h2 {
@@ -409,19 +407,21 @@ nav a { /*Typselektor för a innuti nav*/
 		margin-bottom: 0;
 	}
 	
-	#rocketsCompanies .rocketImage { /*Bilder på raketer på nasa och spacex sidorna*/
-		height: auto;
-		width: 300px;
+	#rocketsCompanies .rocketImages { /*Klasselektor för klassen i nasa.html och spacex.html där de 3 bilderna på raketer ligger*/
 		display: grid;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	#rocketsCompanies .rocketImage { /*Bilder på raketer på nasa och spacex sidorna*/
+		width: 30vh;
+		height: auto;
 		border: 2px solid white;
 		border-radius: 25px;
-		margin: 10px;
+		margin: 1%; /*Samma margin som .factBox*/
 	}
 
 	#rocketsCompanies .logoImage { /*Storlek på loggorna för Nasa och SpaceX*/
+		width: 98%;
 		height: auto;
-		width: 500px;
 	}
 
 	#rocketsCompanies .wrapper { /*Egen grid wrapper för nasa och spacex sidorna*/
