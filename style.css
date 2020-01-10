@@ -468,7 +468,7 @@ nav a { /*Typselektor för a innuti nav*/
   margin-left: 220px; /*Flyttar bilden till vänster 220 pixlar*/
   border-radius: 25px; /*Gör runda kanter runt bilden med storlek på 25 pixlar*/
 }
-#galaxies h2, p { /*Selektor för texten och Rubriken på alla sidor*/
+#galaxies h2, #galaxies p { /*Selektor för texten och Rubriken på alla sidor*/
   color: white; /*Gör om texten til färgen vit*/
   text-align: center; /*Gör så att texten centreras*/
   font-family: Courier; /*Ändrar fonten på texten*/
@@ -502,7 +502,7 @@ nav a { /*Typselektor för a innuti nav*/
 	border: 2px solid white; /*Gör en kant runt bilden med vit färg med storleken 2 pixlar*/
     border-radius: 25px; /*Gör runda kanter runt bilden med storlek på 25 pixlar*/
 }
-#galaxies .tabell, tr, td { /*Klassselktor för tabellen*/
+#galaxies .tabell, #galaxies tr, #galaxies td { /*Klassselktor för tabellen*/
 	background-color: rgba(100,100,100,0.4); /*Gör bakgrunden genomskinlig*/
 	width: 150%;  /*Ändrar storleken på tabellen med 150 procent*/
 	height: auto; /*Justerar höjden automatiskt*/
