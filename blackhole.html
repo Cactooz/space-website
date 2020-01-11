@@ -1,66 +1,72 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Vilken version av html -->
 <html lang="sv"> <!-- Språket på sidan-->
-	<head>
-		<meta charset="UTF-8">
+	<head><!--Start på head-->
+		<meta charset="UTF-8"> <!--Tecken kodning -->
 		<link href="style.css" rel="stylesheet"> <!-- Länkar html sidan med våran gemensamma css-->
-		<link href="images/favicon.png" rel="icon">
+		<link href="images/favicon.png" rel="icon"><!--favicon för sidan-->
 		<title>Rymden</title> <!-- Sidans titel-->
-	</head>
-	<body id="blackhole">
-		<div class="wrapper">
-			<header>
-				<h1>Rymden</h1>
-			<nav>
-				<ul>
+	</head> <!-- slut på head-->
+	<body id="blackhole"> <!-- börjar body-->
+		<div class="wrapper"> <!--wrapper för griden-->
+			<header><!--här börjar headen-->
+				<h1>Rymden</h1><!--Rubrik -->
+			<nav><!--navigations bar för global menyn-->
+				<ul><!--början på en lista i detta fallet för global menyn-->
 					<li> <!-- Start på över meny-->
 						<a href="index.html">Hem</a> <!--Olika html sidor i vår meny-->
+					</li><!--Slut på list elemnet -->
+					<li><!--start på nytt list element -->
+						<a href="rockets.html">Raketer</a><!-- för nu varande inte aktiv-->
 					</li>
 					<li>
-						<a href="rockets.html">Raketer</a>
-					</li>
-					<li>
-						<a href="galaxies.html">Galaxer</a>
+						<a href="galaxies.html">Galaxer</a><!--för nu varande inte activ -->
 					</li>
 					<li>
 						<a class="active" href="blackhole.html">Svart Hål</a> <!--Den sidan man är på för nu läget-->
 					</li>
 				</ul> <!-- Slut på huvudmenyn-->
 
-			</nav>
-			</header>
-			<div class="lowernav">
+			</nav><!--Navigations bar -->
+			</header><!--Slut på header alltså huvudet på min sida där menyn befinner sig -->
+			<div class="lowernav"><!--wrapper för grid-->
 			<nav> <!-- Start på undermeny-->
 				<ul>
 			        <li>
-			            <a class="active" href="blackhole/blackhole.html">Svart hål</a>
+			            <a class="active" href="blackhole/blackhole.html">Svarta hål</a> <!--under menyns activa sida-->
 			        </li>
 			      <li>
-			            <a href="blackhole/facts.html">Fakta</a>
+			            <a href="blackhole/facts.html">Fakta</a> <!--icke active-->
 			        </li>
 					 <li>
 			            <a href="blackhole/temp.html">Vita hål</a>
 			        </li>
 			    </ul>
 			</nav> <!-- Slut på undermeny-->
-			</div>
-				<main>
-				<section> <!-- Sektion 1 av skärmen i detta fallet höger sidan-->
-				<h2> Vad är ett Svart Hål?</h2>	
-					<p class="border">Svarta hål uppstår när en gigantisk stjärna exploderar och stjärnan kollapsar till en liten svart fläck. De är omöjliga att se, men väger tillräckligt mycket för att sluka allt i sin närhet. Svarta hål är minnesmärken av döda jättestjärnor men de är också spektakulära fenomen i sig. Här kan du komma närmare en av universums största gåtor när Illustrerad Vetenskap guidar dig genom de svarta hålen.</p>
-                    <p>Källor: <a href="https://illvet.se/universum/svarta-hal">Illustrerad Vetenskap</a></p>
-				</section>
-							    <section> <!-- Sektion 2 av 3 alltå mitten av skärmen-->
-				<img class="foto" src="https://media1.giphy.com/media/JQpH25Y6TrRQwtF0KY/giphy.gif?cid=790b761156e7a6c4aebd4072efb9b792a5d3d82ce8a676e7&rid=giphy.gif" alt="Bild på SvartHål">
+			</div><!-- här slutar wrappern-->
+				<main><!-- här börjar mainen-->
+				<section class="border"> <!-- Sektion 1 av skärmen i detta fallet höger sidan-->
+				<h2> Vad är ett SvartHål?</h2>	<!--Under rubrik för sektionen -->
+					
+                    <p>Svarta hål uppstår när en gigantisk stjärna exploderar och stjärnan kollapsar till en liten svart fläck. De är omöjliga att se, men väger tillräckligt mycket för att sluka allt i sin närhet.</p>
+                    
+                    <p>Svarta hål är minnesmärken av döda jättestjärnor men de är också spektakulära fenomen i sig. Här kan du komma närmare en av universums största gåtor när Illustrerad Vetenskap guidar dig genom de svarta hålen.</p>
+                    
+                <p>Källor: <a href="https://illvet.se/universum/svarta-hal" target="blank"><br>
+                        Illustrerad Vetenskap</a></p> <!--källa länk med traget blank vilket innebär att den öppnar en ny sida -->
 				</section>
 				
-				</main>
+                    <section> <!-- Sektion 2 av 3 alltå mitten av skärmen-->
+				<img class="foto" src="https://media1.giphy.com/media/JQpH25Y6TrRQwtF0KY/giphy.gif?cid=790b761156e7a6c4aebd4072efb9b792a5d3d82ce8a676e7&rid=giphy.gif" alt="Bild på SvartHål"><!--en gif på ett svart hål i mitten sectionen -->
+				</section>
+			</main> <!--Slut på main -->
 				
-				<aside class = "faktaSvartHål"> <!-- höger sidan av skärmen sida sektionen eller tilläg-->
-					<h2 class="svartHål">Stjärnor</h2>
-					<p class="border">Ett svart hål är universums mest mystiska objekt. Dess gravitations kraft är så stark att inte ens ljus som färdas i 300 000 km/s kan komma undan ett svarthåls dragningskraft. Simpelt ett svart hål suger till sig ljus där för är de omöjliga att se,Där av namnet svart hål. </p> <!-- paragraf med fakta om svarta hål-->
-				</aside>
-			
-			
-		</div>
-	</body>
-</html>
+				<aside class="border"> <!-- här börjar min aside-->
+                    <h2>Otroliga krafter</h2><!--under rubrik -->
+					
+                    <p>Ett svart hål är universums mest mystiska objekt. Dess gravitations kraft är så stark att inte ens ljus som färdas i 300 000 km/s kan komma undan ett svarthåls dragningskraft. Simpelt ett svart hål suger till sig ljus där för är de omöjliga att se,Där av namnet svart hål. </p> <!-- paragraf med fakta om svarta hål-->
+                     
+                    <p>Video om Svarta Hål: <a href= "https://www.youtube.com/watch?v=FcC-MgYrE_E"target="blank"><br>Universums största mysterium</a></p><!--video länk, öppnar ny rutta-->
+			</aside>	<!--slut på aside -->
+		</div><!--slut på wrapper-->
+	</body><!--slut på body-->
+</html><!--slutet på html sidan-->
